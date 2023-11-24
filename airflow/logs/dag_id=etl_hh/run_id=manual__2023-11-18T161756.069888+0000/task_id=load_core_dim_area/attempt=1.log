@@ -1,0 +1,29 @@
+[2023-11-18 16:18:14,939] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_area manual__2023-11-18T16:17:56.069888+00:00 [queued]>
+[2023-11-18 16:18:14,963] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_area manual__2023-11-18T16:17:56.069888+00:00 [queued]>
+[2023-11-18 16:18:14,964] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 16:18:14,965] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-18 16:18:14,966] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 16:18:15,000] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_dim_area> on 2023-11-18 16:17:56.069888+00:00
+[2023-11-18 16:18:15,008] {standard_task_runner.py:52} INFO - Started process 7566 to run task
+[2023-11-18 16:18:15,012] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_dim_area', 'manual__2023-11-18T16:17:56.069888+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpz0vlpplf', '--error-file', '/tmp/tmpvl8dzi3l']
+[2023-11-18 16:18:15,013] {standard_task_runner.py:80} INFO - Job 91: Subtask load_core_dim_area
+[2023-11-18 16:18:15,123] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_dim_area manual__2023-11-18T16:17:56.069888+00:00 [running]> on host 2e176173f0f7
+[2023-11-18 16:18:15,275] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_dim_area
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-18T16:17:56.069888+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-18T16:17:56.069888+00:00
+[2023-11-18 16:18:15,290] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-18 16:18:15,318] {dbapi.py:231} INFO - Running statement: INSERT INTO core_layer.dim_area (id, name)
+            SELECT DISTINCT 
+                area_id,
+                area_name
+            FROM staging_layer.vacancy, parameters: None
+[2023-11-18 16:18:15,332] {dbapi.py:239} INFO - Rows affected: 97
+[2023-11-18 16:18:15,365] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_dim_area, execution_date=20231118T161756, start_date=20231118T161814, end_date=20231118T161815
+[2023-11-18 16:18:15,426] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-18 16:18:15,508] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

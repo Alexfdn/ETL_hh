@@ -1,0 +1,78 @@
+[2023-11-21 16:02:57,165] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 16:02:57,196] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 16:02:57,196] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 16:02:57,197] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-21 16:02:57,198] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 16:02:57,229] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_settings_setup> on 2023-11-20 00:00:00+00:00
+[2023-11-21 16:02:57,238] {standard_task_runner.py:52} INFO - Started process 1908 to run task
+[2023-11-21 16:02:57,243] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_settings_setup', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '300', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpfocgyj2e', '--error-file', '/tmp/tmpxfu5dfi5']
+[2023-11-21 16:02:57,244] {standard_task_runner.py:80} INFO - Job 300: Subtask load_settings_setup
+[2023-11-21 16:02:57,388] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [running]> on host b47ed23e9d21
+[2023-11-21 16:02:57,555] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_settings_setup
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-21 16:02:57,573] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-21 16:02:57,601] {dbapi.py:231} INFO - Running statement: INSERT INTO settings.setup (date_start)
+            VALUES(now()), parameters: None
+[2023-11-21 16:02:57,608] {dbapi.py:239} INFO - Rows affected: 1
+[2023-11-21 16:02:57,638] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_settings_setup, execution_date=20231120T000000, start_date=20231121T160257, end_date=20231121T160257
+[2023-11-21 16:02:57,698] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-21 16:02:57,769] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-21 16:04:53,782] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 16:04:53,797] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 16:04:53,798] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 16:04:53,798] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-21 16:04:53,799] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 16:04:53,817] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_settings_setup> on 2023-11-20 00:00:00+00:00
+[2023-11-21 16:04:53,824] {standard_task_runner.py:52} INFO - Started process 1998 to run task
+[2023-11-21 16:04:53,828] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_settings_setup', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpcbojzth7', '--error-file', '/tmp/tmpgrince_q']
+[2023-11-21 16:04:53,829] {standard_task_runner.py:80} INFO - Job 305: Subtask load_settings_setup
+[2023-11-21 16:04:53,916] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [running]> on host b47ed23e9d21
+[2023-11-21 16:04:54,030] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_settings_setup
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-21 16:04:54,043] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-21 16:04:54,067] {dbapi.py:231} INFO - Running statement: INSERT INTO settings.setup (date_start)
+            VALUES(now()), parameters: None
+[2023-11-21 16:04:54,073] {dbapi.py:239} INFO - Rows affected: 1
+[2023-11-21 16:04:54,102] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_settings_setup, execution_date=20231120T000000, start_date=20231121T160453, end_date=20231121T160454
+[2023-11-21 16:04:54,160] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-21 16:04:54,245] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-21 16:14:19,949] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 16:14:19,965] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 16:14:19,969] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 16:14:19,970] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-21 16:14:19,971] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 16:14:19,995] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_settings_setup> on 2023-11-20 00:00:00+00:00
+[2023-11-21 16:14:20,001] {standard_task_runner.py:52} INFO - Started process 2449 to run task
+[2023-11-21 16:14:20,005] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_settings_setup', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '323', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp1r6mjic7', '--error-file', '/tmp/tmpnq35m7l0']
+[2023-11-21 16:14:20,005] {standard_task_runner.py:80} INFO - Job 323: Subtask load_settings_setup
+[2023-11-21 16:14:20,087] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-20T00:00:00+00:00 [running]> on host b47ed23e9d21
+[2023-11-21 16:14:20,189] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_settings_setup
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-21 16:14:20,203] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-21 16:14:20,226] {dbapi.py:231} INFO - Running statement: INSERT INTO settings.setup (date_start)
+            VALUES(now()), parameters: None
+[2023-11-21 16:14:20,233] {dbapi.py:239} INFO - Rows affected: 1
+[2023-11-21 16:14:20,259] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_settings_setup, execution_date=20231120T000000, start_date=20231121T161419, end_date=20231121T161420
+[2023-11-21 16:14:20,297] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-21 16:14:20,374] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

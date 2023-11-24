@@ -1,0 +1,34 @@
+[2023-11-18 19:42:06,732] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_employer manual__2023-11-18T19:41:34.961700+00:00 [queued]>
+[2023-11-18 19:42:06,759] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_employer manual__2023-11-18T19:41:34.961700+00:00 [queued]>
+[2023-11-18 19:42:06,760] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 19:42:06,778] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-18 19:42:06,779] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 19:42:06,814] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_dim_employer> on 2023-11-18 19:41:34.961700+00:00
+[2023-11-18 19:42:06,824] {standard_task_runner.py:52} INFO - Started process 13629 to run task
+[2023-11-18 19:42:06,828] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_dim_employer', 'manual__2023-11-18T19:41:34.961700+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpwdy7ywut', '--error-file', '/tmp/tmpj3bcul0o']
+[2023-11-18 19:42:06,829] {standard_task_runner.py:80} INFO - Job 101: Subtask load_core_dim_employer
+[2023-11-18 19:42:06,989] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_dim_employer manual__2023-11-18T19:41:34.961700+00:00 [running]> on host 2e176173f0f7
+[2023-11-18 19:42:07,206] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_dim_employer
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-18T19:41:34.961700+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-18T19:41:34.961700+00:00
+[2023-11-18 19:42:07,226] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-18 19:42:07,259] {dbapi.py:231} INFO - Running statement: INSERT INTO core_layer.dim_employer (
+                employer_id, 
+                name, 
+                is_accredited_it_employer
+            )
+            SELECT DISTINCT
+                employer_id,
+                employer_name,
+                is_accredited_it_employer
+            FROM staging_layer.vacancy, parameters: None
+[2023-11-18 19:42:07,283] {dbapi.py:239} INFO - Rows affected: 644
+[2023-11-18 19:42:07,327] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_dim_employer, execution_date=20231118T194134, start_date=20231118T194206, end_date=20231118T194207
+[2023-11-18 19:42:07,404] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-18 19:42:07,526] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

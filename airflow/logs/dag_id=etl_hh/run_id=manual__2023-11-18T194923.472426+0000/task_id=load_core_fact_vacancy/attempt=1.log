@@ -1,0 +1,80 @@
+[2023-11-18 19:49:58,820] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy manual__2023-11-18T19:49:23.472426+00:00 [queued]>
+[2023-11-18 19:49:58,845] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy manual__2023-11-18T19:49:23.472426+00:00 [queued]>
+[2023-11-18 19:49:58,846] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 19:49:58,860] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-18 19:49:58,861] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 19:49:58,897] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_fact_vacancy> on 2023-11-18 19:49:23.472426+00:00
+[2023-11-18 19:49:58,906] {standard_task_runner.py:52} INFO - Started process 13946 to run task
+[2023-11-18 19:49:58,911] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_fact_vacancy', 'manual__2023-11-18T19:49:23.472426+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpjk6ki2x8', '--error-file', '/tmp/tmp3pzl9xao']
+[2023-11-18 19:49:58,912] {standard_task_runner.py:80} INFO - Job 110: Subtask load_core_fact_vacancy
+[2023-11-18 19:49:59,061] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_fact_vacancy manual__2023-11-18T19:49:23.472426+00:00 [running]> on host 2e176173f0f7
+[2023-11-18 19:49:59,237] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_fact_vacancy
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-18T19:49:23.472426+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-18T19:49:23.472426+00:00
+[2023-11-18 19:49:59,257] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-18 19:49:59,290] {dbapi.py:231} INFO - Running statement: INSERT INTO core_layer.fact_vacancy (
+            id,
+            vacancy_name,
+            grade,
+            published_at,
+            is_archive,
+            is_open,
+            employer_id,
+            experience_id,
+            area_id,
+            salary_from,
+            salary_to,
+            is_gross,
+            salary_currency
+        )
+        SELECT DISTINCT
+            id,
+            CASE 
+                WHEN vacancy_name LIKE '%Data Engineer%' 
+                    OR vacancy_name LIKE 'Дата Инженер'
+                    OR vacancy_name LIKE 'Инженер данных'
+                THEN 'Инженер данных'
+                WHEN vacancy_name LIKE '%Аналитик данных%' 
+                    OR vacancy_name LIKE '%Data Analyst%'
+                THEN 'Аналитик данных'
+                WHEN vacancy_name LIKE '%Data scientist%' 
+                    OR vacancy_name LIKE '%Исследователь данных%'
+                THEN 'Data scientist'
+            END AS vacancy_name,
+            CASE
+                WHEN vacancy_name LIKE ('%Стажер%')
+                THEN 'Intern'
+                WHEN vacancy_name LIKE ('%Младший%')
+                    OR vacancy_name LIKE ('%Junior%')
+                THEN 'Junior'
+                WHEN vacancy_name LIKE ('%Старший%')
+                    OR vacancy_name LIKE ('%Middle%')
+                THEN 'Middle'
+                WHEN vacancy_name LIKE ('%Ведущий%')
+                    OR vacancy_name LIKE ('%Senior%')
+                THEN 'Senior'
+                WHEN vacancy_name LIKE ('%Руководитель%')
+                    OR vacancy_name LIKE ('%Team Lead%')
+                THEN 'Team Lead'
+            END AS grade,
+            published_at,
+            is_archive,
+            is_open,
+            employer_id ,
+            experience_id,
+            area_id,
+            salary_from,
+            salary_to,
+            is_gross,
+            salary_currency
+        FROM staging_layer.vacancy, parameters: None
+[2023-11-18 19:49:59,383] {dbapi.py:239} INFO - Rows affected: 1579
+[2023-11-18 19:49:59,436] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_fact_vacancy, execution_date=20231118T194923, start_date=20231118T194958, end_date=20231118T194959
+[2023-11-18 19:49:59,486] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-18 19:49:59,556] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

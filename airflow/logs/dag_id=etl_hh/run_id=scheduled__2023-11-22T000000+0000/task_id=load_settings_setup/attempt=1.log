@@ -1,0 +1,26 @@
+[2023-11-23 13:14:41,394] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-22T00:00:00+00:00 [queued]>
+[2023-11-23 13:14:41,412] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-22T00:00:00+00:00 [queued]>
+[2023-11-23 13:14:41,413] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-23 13:14:41,413] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-23 13:14:41,414] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-23 13:14:41,432] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_settings_setup> on 2023-11-22 00:00:00+00:00
+[2023-11-23 13:14:41,437] {standard_task_runner.py:52} INFO - Started process 92 to run task
+[2023-11-23 13:14:41,441] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_settings_setup', 'scheduled__2023-11-22T00:00:00+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmprjhzet6f', '--error-file', '/tmp/tmpbme0iev0']
+[2023-11-23 13:14:41,442] {standard_task_runner.py:80} INFO - Job 73: Subtask load_settings_setup
+[2023-11-23 13:14:41,527] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_settings_setup scheduled__2023-11-22T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-23 13:14:41,630] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_settings_setup
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-22T00:00:00+00:00
+[2023-11-23 13:14:41,643] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-23 13:14:41,665] {dbapi.py:231} INFO - Running statement: INSERT INTO settings.setup (date_start)
+            VALUES(now()), parameters: None
+[2023-11-23 13:14:41,677] {dbapi.py:239} INFO - Rows affected: 1
+[2023-11-23 13:14:41,705] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_settings_setup, execution_date=20231122T000000, start_date=20231123T131441, end_date=20231123T131441
+[2023-11-23 13:14:41,732] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-23 13:14:41,834] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

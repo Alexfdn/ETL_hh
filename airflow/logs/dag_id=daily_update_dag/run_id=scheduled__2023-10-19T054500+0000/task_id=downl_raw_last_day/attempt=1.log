@@ -1,0 +1,38 @@
+[2023-10-20 11:54:21,486] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: daily_update_dag.downl_raw_last_day scheduled__2023-10-19T05:45:00+00:00 [queued]>
+[2023-10-20 11:54:21,501] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: daily_update_dag.downl_raw_last_day scheduled__2023-10-19T05:45:00+00:00 [queued]>
+[2023-10-20 11:54:21,502] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-20 11:54:21,503] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-10-20 11:54:21,503] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-20 11:54:21,526] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): downl_raw_last_day> on 2023-10-19 05:45:00+00:00
+[2023-10-20 11:54:21,533] {standard_task_runner.py:52} INFO - Started process 175 to run task
+[2023-10-20 11:54:21,537] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'daily_update_dag', 'downl_raw_last_day', 'scheduled__2023-10-19T05:45:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/init.py', '--cfg-path', '/tmp/tmp6epj81mu', '--error-file', '/tmp/tmp51ocaorp']
+[2023-10-20 11:54:21,539] {standard_task_runner.py:80} INFO - Job 9: Subtask downl_raw_last_day
+[2023-10-20 11:54:21,636] {task_command.py:371} INFO - Running <TaskInstance: daily_update_dag.downl_raw_last_day scheduled__2023-10-19T05:45:00+00:00 [running]> on host 0fa47167aae4
+[2023-10-20 11:54:21,760] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=konstantin_a
+AIRFLOW_CTX_DAG_ID=daily_update_dag
+AIRFLOW_CTX_TASK_ID=downl_raw_last_day
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-19T05:45:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-19T05:45:00+00:00
+[2023-10-20 11:54:21,770] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/init.py", line 331, in downl_raw_last_day
+    cur.execute(f"SELECT MAX(start_time) FROM raw_{security};")
+psycopg2.errors.UndefinedTable: relation "raw_gazp" does not exist
+LINE 1: SELECT MAX(start_time) FROM raw_GAZP;
+                                    ^
+
+[2023-10-20 11:54:21,791] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=daily_update_dag, task_id=downl_raw_last_day, execution_date=20231019T054500, start_date=20231020T115421, end_date=20231020T115421
+[2023-10-20 11:54:21,811] {standard_task_runner.py:97} ERROR - Failed to execute job 9 for task downl_raw_last_day (relation "raw_gazp" does not exist
+LINE 1: SELECT MAX(start_time) FROM raw_GAZP;
+                                    ^
+; 175)
+[2023-10-20 11:54:21,830] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-10-20 11:54:21,894] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

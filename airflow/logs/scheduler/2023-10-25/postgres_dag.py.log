@@ -1,0 +1,7 @@
+[2023-10-25 05:31:50,706] {processor.py:153} INFO - Started process (PID=4302) to work on /opt/airflow/dags/postgres_dag.py
+[2023-10-25 05:31:50,781] {processor.py:641} INFO - Processing file /opt/airflow/dags/postgres_dag.py for tasks to queue
+[2023-10-25 05:31:50,894] {logging_mixin.py:115} INFO - [2023-10-25 05:31:50,894] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/postgres_dag.py
+[2023-10-25 05:31:54,235] {processor.py:651} INFO - DAG(s) dict_keys(['postgres_dag']) retrieved from /opt/airflow/dags/postgres_dag.py
+[2023-10-25 05:31:54,460] {logging_mixin.py:115} INFO - [2023-10-25 05:31:54,460] {dag.py:2420} INFO - Sync 1 DAGs
+[2023-10-25 05:31:54,824] {logging_mixin.py:115} INFO - [2023-10-25 05:31:54,824] {dag.py:2972} INFO - Setting next_dagrun for postgres_dag to None, run_after=None
+[2023-10-25 05:31:54,979] {processor.py:161} INFO - Processing /opt/airflow/dags/postgres_dag.py took 4.309 seconds

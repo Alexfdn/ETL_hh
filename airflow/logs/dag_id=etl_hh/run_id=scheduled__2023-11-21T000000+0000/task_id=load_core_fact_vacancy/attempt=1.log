@@ -1,0 +1,520 @@
+[2023-11-22 06:34:13,705] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 06:34:13,728] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 06:34:13,729] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 06:34:13,730] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 06:34:13,731] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 06:34:13,759] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_fact_vacancy> on 2023-11-21 00:00:00+00:00
+[2023-11-22 06:34:13,770] {standard_task_runner.py:52} INFO - Started process 278 to run task
+[2023-11-22 06:34:13,776] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_fact_vacancy', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpdyjmhk75', '--error-file', '/tmp/tmpxhndxz_a']
+[2023-11-22 06:34:13,777] {standard_task_runner.py:80} INFO - Job 12: Subtask load_core_fact_vacancy
+[2023-11-22 06:34:13,920] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 06:34:14,103] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_fact_vacancy
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 06:34:14,124] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 06:34:14,146] {dbapi.py:231} INFO - Running statement: 
+        MERGE INTO core.fact_vacancy AS trg
+        USING(
+            SELECT DISTINCT
+                    id AS vacancy_id,
+                    CASE 
+                        WHEN vacancy_name ILIKE '%data engineer%' 
+                            OR vacancy_name ILIKE '%data инженер%'
+                            OR vacancy_name ILIKE '%data-инженер%'
+                            OR vacancy_name ILIKE '%дата инженер%'
+                            OR vacancy_name ILIKE '%инженер данных%'
+                            OR vacancy_name ILIKE '%дата-инженер%'
+                        THEN 'Инженер данных'
+                        WHEN vacancy_name ILIKE '%аналитик данных%' 
+                            OR vacancy_name ILIKE '%data analyst%'
+                            OR vacancy_name ILIKE '%data аналитик%'
+                        THEN 'Аналитик данных'
+                        WHEN vacancy_name ILIKE '%data scientist%'
+                            OR vacancy_name ILIKE '%исследователь данных%'
+                        THEN 'Data scientist'
+                    END AS vacancy_name,
+                    CASE
+                        WHEN vacancy_name LIKE ('%Стажер%')
+                        THEN 'Intern'
+                        WHEN vacancy_name LIKE ('%Младший%')
+                            OR vacancy_name LIKE ('%Junior%')
+                        THEN 'Junior'
+                        WHEN vacancy_name LIKE ('%Старший%')
+                            OR vacancy_name LIKE ('%Middle%')
+                        THEN 'Middle'
+                        WHEN vacancy_name LIKE ('%Ведущий%')
+                            OR vacancy_name LIKE ('%Senior%')
+                        THEN 'Senior'
+                        WHEN vacancy_name LIKE ('%Руководитель%')
+                            OR vacancy_name LIKE ('%Team Lead%')
+                        THEN 'Team Lead'
+                    END AS grade,
+                    CASE
+                        WHEN experience_id = 'noExperience'
+                        THEN 'Intern'
+                        WHEN experience_id = 'between1And3'
+                        THEN 'Junior'
+                        WHEN experience_id = 'between3And6'
+                        THEN 'Middle'
+                        WHEN experience_id = 'moreThan6'
+                        THEN 'Senior'
+                    END AS grade_experience,
+                    published_at,
+                    is_archive,
+                    is_open,
+                    employer_id ,
+                    experience_id,
+                    area_id,
+                    salary_from,
+                    salary_to,
+                    is_gross,
+                    salary_currency
+                FROM staging.vacancy) AS src
+        ON trg.vacancy_id = src.vacancy_id
+        WHEN NOT MATCHED
+        THEN INSERT(
+            vacancy_id,
+            vacancy_name,
+            grade,
+            grade_experience,
+            published_at,
+            is_archive,
+            is_open,
+            employer_id,
+            experience_id,
+            area_id,
+            salary_from,
+            salary_to,
+            is_gross,
+            salary_currency)
+        VALUES(
+            src.vacancy_id,
+            src.vacancy_name,
+            src.grade,
+            src.grade_experience,
+            src.published_at,
+            src.is_archive,
+            src.is_open,
+            src.employer_id,
+            src.experience_id,
+            src.area_id,
+            src.salary_from,
+            src.salary_to,
+            src.is_gross,
+            src.salary_currency)
+        WHEN MATCHED
+        THEN UPDATE
+        SET 
+            vacancy_id = src.vacancy_id,
+            vacancy_name = src.vacancy_name,
+            grade = src.grade,
+            grade_experience = src.grade_experience,
+            published_at = src.published_at,
+            is_archive = src.is_archive,
+            is_open = src.is_open,
+            employer_id = src.employer_id,
+            experience_id = src.experience_id,
+            area_id = src.area_id,
+            salary_from = src.salary_from,
+            salary_to = src.salary_to,
+            is_gross = src.is_gross,
+            salary_currency = src.salary_currency, parameters: None
+[2023-11-22 06:34:14,316] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_fact_vacancy, execution_date=20231121T000000, start_date=20231122T063413, end_date=20231122T063414
+[2023-11-22 06:34:14,390] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 06:34:14,476] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-22 19:13:54,986] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:13:55,016] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:13:55,018] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:13:55,019] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 19:13:55,020] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:13:55,052] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_fact_vacancy> on 2023-11-21 00:00:00+00:00
+[2023-11-22 19:13:55,062] {standard_task_runner.py:52} INFO - Started process 476 to run task
+[2023-11-22 19:13:55,067] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_fact_vacancy', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp02tj3mm4', '--error-file', '/tmp/tmpwsflg37a']
+[2023-11-22 19:13:55,068] {standard_task_runner.py:80} INFO - Job 52: Subtask load_core_fact_vacancy
+[2023-11-22 19:13:55,195] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 19:13:55,439] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_fact_vacancy
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 19:13:55,457] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 19:13:55,494] {dbapi.py:231} INFO - Running statement: 
+        MERGE INTO core.fact_vacancy AS trg
+        USING(
+            SELECT DISTINCT
+                    id AS vacancy_id,
+                    CASE 
+                        WHEN vacancy_name ILIKE '%data engineer%' 
+                            OR vacancy_name ILIKE '%data инженер%'
+                            OR vacancy_name ILIKE '%data-инженер%'
+                            OR vacancy_name ILIKE '%дата инженер%'
+                            OR vacancy_name ILIKE '%инженер данных%'
+                            OR vacancy_name ILIKE '%дата-инженер%'
+                        THEN 'Инженер данных'
+                        WHEN vacancy_name ILIKE '%аналитик данных%' 
+                            OR vacancy_name ILIKE '%data analyst%'
+                            OR vacancy_name ILIKE '%data аналитик%'
+                        THEN 'Аналитик данных'
+                        WHEN vacancy_name ILIKE '%data scientist%'
+                            OR vacancy_name ILIKE '%исследователь данных%'
+                        THEN 'Data scientist'
+                    END AS vacancy_name,
+                    CASE
+                        WHEN vacancy_name LIKE ('%Стажер%')
+                        THEN 'Intern'
+                        WHEN vacancy_name LIKE ('%Младший%')
+                            OR vacancy_name LIKE ('%Junior%')
+                        THEN 'Junior'
+                        WHEN vacancy_name LIKE ('%Старший%')
+                            OR vacancy_name LIKE ('%Middle%')
+                        THEN 'Middle'
+                        WHEN vacancy_name LIKE ('%Ведущий%')
+                            OR vacancy_name LIKE ('%Senior%')
+                        THEN 'Senior'
+                        WHEN vacancy_name LIKE ('%Руководитель%')
+                            OR vacancy_name LIKE ('%Team Lead%')
+                        THEN 'Team Lead'
+                    END AS grade,
+                    CASE
+                        WHEN experience_id = 'noExperience'
+                        THEN 'Intern'
+                        WHEN experience_id = 'between1And3'
+                        THEN 'Junior'
+                        WHEN experience_id = 'between3And6'
+                        THEN 'Middle'
+                        WHEN experience_id = 'moreThan6'
+                        THEN 'Senior'
+                    END AS grade_experience,
+                    published_at,
+                    is_archive,
+                    is_open,
+                    employer_id ,
+                    experience_id,
+                    area_id,
+                    salary_from,
+                    salary_to,
+                    is_gross,
+                    salary_currency
+                FROM staging.vacancy) AS src
+        ON trg.vacancy_id = src.vacancy_id
+        WHEN NOT MATCHED
+        THEN INSERT(
+            vacancy_id,
+            vacancy_name,
+            grade,
+            grade_experience,
+            published_at,
+            is_archive,
+            is_open,
+            employer_id,
+            experience_id,
+            area_id,
+            salary_from,
+            salary_to,
+            is_gross,
+            salary_currency)
+        VALUES(
+            src.vacancy_id,
+            src.vacancy_name,
+            src.grade,
+            src.grade_experience,
+            src.published_at,
+            src.is_archive,
+            src.is_open,
+            src.employer_id,
+            src.experience_id,
+            src.area_id,
+            src.salary_from,
+            src.salary_to,
+            src.is_gross,
+            src.salary_currency)
+        WHEN MATCHED
+        THEN UPDATE
+        SET 
+            vacancy_id = src.vacancy_id,
+            vacancy_name = src.vacancy_name,
+            grade = src.grade,
+            grade_experience = src.grade_experience,
+            published_at = src.published_at,
+            is_archive = src.is_archive,
+            is_open = src.is_open,
+            employer_id = src.employer_id,
+            experience_id = src.experience_id,
+            area_id = src.area_id,
+            salary_from = src.salary_from,
+            salary_to = src.salary_to,
+            is_gross = src.is_gross,
+            salary_currency = src.salary_currency, parameters: None
+[2023-11-22 19:13:55,548] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_fact_vacancy, execution_date=20231121T000000, start_date=20231122T191354, end_date=20231122T191355
+[2023-11-22 19:13:55,642] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 19:13:55,752] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-22 19:16:43,693] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:16:43,726] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:16:43,727] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:16:43,728] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 19:16:43,729] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:16:43,776] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_fact_vacancy> on 2023-11-21 00:00:00+00:00
+[2023-11-22 19:16:43,784] {standard_task_runner.py:52} INFO - Started process 600 to run task
+[2023-11-22 19:16:43,788] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_fact_vacancy', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmplgj1ysdw', '--error-file', '/tmp/tmpz7fv3_do']
+[2023-11-22 19:16:43,789] {standard_task_runner.py:80} INFO - Job 60: Subtask load_core_fact_vacancy
+[2023-11-22 19:16:43,924] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 19:16:44,177] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_fact_vacancy
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 19:16:44,227] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 19:16:44,273] {dbapi.py:231} INFO - Running statement: 
+        MERGE INTO core.fact_vacancy AS trg
+        USING(
+            SELECT DISTINCT
+                    id AS vacancy_id,
+                    CASE 
+                        WHEN vacancy_name ILIKE '%data engineer%' 
+                            OR vacancy_name ILIKE '%data инженер%'
+                            OR vacancy_name ILIKE '%data-инженер%'
+                            OR vacancy_name ILIKE '%дата инженер%'
+                            OR vacancy_name ILIKE '%инженер данных%'
+                            OR vacancy_name ILIKE '%дата-инженер%'
+                        THEN 'Инженер данных'
+                        WHEN vacancy_name ILIKE '%аналитик данных%' 
+                            OR vacancy_name ILIKE '%data analyst%'
+                            OR vacancy_name ILIKE '%data аналитик%'
+                        THEN 'Аналитик данных'
+                        WHEN vacancy_name ILIKE '%data scientist%'
+                            OR vacancy_name ILIKE '%исследователь данных%'
+                        THEN 'Data scientist'
+                    END AS vacancy_name,
+                    CASE
+                        WHEN vacancy_name LIKE ('%Стажер%')
+                        THEN 'Intern'
+                        WHEN vacancy_name LIKE ('%Младший%')
+                            OR vacancy_name LIKE ('%Junior%')
+                        THEN 'Junior'
+                        WHEN vacancy_name LIKE ('%Старший%')
+                            OR vacancy_name LIKE ('%Middle%')
+                        THEN 'Middle'
+                        WHEN vacancy_name LIKE ('%Ведущий%')
+                            OR vacancy_name LIKE ('%Senior%')
+                        THEN 'Senior'
+                        WHEN vacancy_name LIKE ('%Руководитель%')
+                            OR vacancy_name LIKE ('%Team Lead%')
+                        THEN 'Team Lead'
+                    END AS grade,
+                    CASE
+                        WHEN experience_id = 'noExperience'
+                        THEN 'Intern'
+                        WHEN experience_id = 'between1And3'
+                        THEN 'Junior'
+                        WHEN experience_id = 'between3And6'
+                        THEN 'Middle'
+                        WHEN experience_id = 'moreThan6'
+                        THEN 'Senior'
+                    END AS grade_experience,
+                    published_at,
+                    is_archive,
+                    is_open,
+                    employer_id ,
+                    experience_id,
+                    area_id,
+                    salary_from,
+                    salary_to,
+                    is_gross,
+                    salary_currency
+                FROM staging.vacancy) AS src
+        ON trg.vacancy_id = src.vacancy_id
+        WHEN NOT MATCHED
+        THEN INSERT(
+            vacancy_id,
+            vacancy_name,
+            grade,
+            grade_experience,
+            published_at,
+            is_archive,
+            is_open,
+            employer_id,
+            experience_id,
+            area_id,
+            salary_from,
+            salary_to,
+            is_gross,
+            salary_currency)
+        VALUES(
+            src.vacancy_id,
+            src.vacancy_name,
+            src.grade,
+            src.grade_experience,
+            src.published_at,
+            src.is_archive,
+            src.is_open,
+            src.employer_id,
+            src.experience_id,
+            src.area_id,
+            src.salary_from,
+            src.salary_to,
+            src.is_gross,
+            src.salary_currency)
+        WHEN MATCHED
+        THEN UPDATE
+        SET 
+            vacancy_id = src.vacancy_id,
+            vacancy_name = src.vacancy_name,
+            grade = src.grade,
+            grade_experience = src.grade_experience,
+            published_at = src.published_at,
+            is_archive = src.is_archive,
+            is_open = src.is_open,
+            employer_id = src.employer_id,
+            experience_id = src.experience_id,
+            area_id = src.area_id,
+            salary_from = src.salary_from,
+            salary_to = src.salary_to,
+            is_gross = src.is_gross,
+            salary_currency = src.salary_currency, parameters: None
+[2023-11-22 19:16:44,317] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_fact_vacancy, execution_date=20231121T000000, start_date=20231122T191643, end_date=20231122T191644
+[2023-11-22 19:16:44,367] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 19:16:44,430] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-22 19:19:03,094] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:19:03,156] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:19:03,158] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:19:03,160] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 19:19:03,162] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:19:03,221] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_fact_vacancy> on 2023-11-21 00:00:00+00:00
+[2023-11-22 19:19:03,230] {standard_task_runner.py:52} INFO - Started process 706 to run task
+[2023-11-22 19:19:03,236] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_fact_vacancy', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpiigi14pk', '--error-file', '/tmp/tmpxf92qpn0']
+[2023-11-22 19:19:03,239] {standard_task_runner.py:80} INFO - Job 68: Subtask load_core_fact_vacancy
+[2023-11-22 19:19:03,411] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_fact_vacancy scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 19:19:03,728] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_fact_vacancy
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 19:19:03,755] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 19:19:03,795] {dbapi.py:231} INFO - Running statement: 
+        MERGE INTO core.fact_vacancy AS trg
+        USING(
+            SELECT DISTINCT
+                    id AS vacancy_id,
+                    CASE 
+                        WHEN vacancy_name ILIKE '%data engineer%' 
+                            OR vacancy_name ILIKE '%data инженер%'
+                            OR vacancy_name ILIKE '%data-инженер%'
+                            OR vacancy_name ILIKE '%дата инженер%'
+                            OR vacancy_name ILIKE '%инженер данных%'
+                            OR vacancy_name ILIKE '%дата-инженер%'
+                        THEN 'Инженер данных'
+                        WHEN vacancy_name ILIKE '%аналитик данных%' 
+                            OR vacancy_name ILIKE '%data analyst%'
+                            OR vacancy_name ILIKE '%data аналитик%'
+                        THEN 'Аналитик данных'
+                        WHEN vacancy_name ILIKE '%data scientist%'
+                            OR vacancy_name ILIKE '%исследователь данных%'
+                        THEN 'Data scientist'
+                    END AS vacancy_name,
+                    CASE
+                        WHEN vacancy_name LIKE ('%Стажер%')
+                        THEN 'Intern'
+                        WHEN vacancy_name LIKE ('%Младший%')
+                            OR vacancy_name LIKE ('%Junior%')
+                        THEN 'Junior'
+                        WHEN vacancy_name LIKE ('%Старший%')
+                            OR vacancy_name LIKE ('%Middle%')
+                        THEN 'Middle'
+                        WHEN vacancy_name LIKE ('%Ведущий%')
+                            OR vacancy_name LIKE ('%Senior%')
+                        THEN 'Senior'
+                        WHEN vacancy_name LIKE ('%Руководитель%')
+                            OR vacancy_name LIKE ('%Team Lead%')
+                        THEN 'Team Lead'
+                    END AS grade,
+                    CASE
+                        WHEN experience_id = 'noExperience'
+                        THEN 'Intern'
+                        WHEN experience_id = 'between1And3'
+                        THEN 'Junior'
+                        WHEN experience_id = 'between3And6'
+                        THEN 'Middle'
+                        WHEN experience_id = 'moreThan6'
+                        THEN 'Senior'
+                    END AS grade_experience,
+                    published_at,
+                    is_archive,
+                    is_open,
+                    employer_id ,
+                    experience_id,
+                    area_id,
+                    salary_from,
+                    salary_to,
+                    is_gross,
+                    salary_currency
+                FROM staging.vacancy) AS src
+        ON trg.vacancy_id = src.vacancy_id
+        WHEN NOT MATCHED
+        THEN INSERT(
+            vacancy_id,
+            vacancy_name,
+            grade,
+            grade_experience,
+            published_at,
+            is_archive,
+            is_open,
+            employer_id,
+            experience_id,
+            area_id,
+            salary_from,
+            salary_to,
+            is_gross,
+            salary_currency)
+        VALUES(
+            src.vacancy_id,
+            src.vacancy_name,
+            src.grade,
+            src.grade_experience,
+            src.published_at,
+            src.is_archive,
+            src.is_open,
+            src.employer_id,
+            src.experience_id,
+            src.area_id,
+            src.salary_from,
+            src.salary_to,
+            src.is_gross,
+            src.salary_currency)
+        WHEN MATCHED
+        THEN UPDATE
+        SET 
+            vacancy_id = src.vacancy_id,
+            vacancy_name = src.vacancy_name,
+            grade = src.grade,
+            grade_experience = src.grade_experience,
+            published_at = src.published_at,
+            is_archive = src.is_archive,
+            is_open = src.is_open,
+            employer_id = src.employer_id,
+            experience_id = src.experience_id,
+            area_id = src.area_id,
+            salary_from = src.salary_from,
+            salary_to = src.salary_to,
+            is_gross = src.is_gross,
+            salary_currency = src.salary_currency, parameters: None
+[2023-11-22 19:19:03,881] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_fact_vacancy, execution_date=20231121T000000, start_date=20231122T191903, end_date=20231122T191903
+[2023-11-22 19:19:03,976] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 19:19:04,125] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

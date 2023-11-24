@@ -1,0 +1,240 @@
+[2023-10-26 04:38:52,249] {processor.py:153} INFO - Started process (PID=74) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:38:52,252] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:38:52,256] {logging_mixin.py:115} INFO - [2023-10-26 04:38:52,255] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:38:54,113] {logging_mixin.py:115} INFO - [2023-10-26 04:38:54,113] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:38:54,180] {logging_mixin.py:115} INFO - [2023-10-26 04:38:54,177] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:38:54,360] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:38:54,424] {logging_mixin.py:115} INFO - [2023-10-26 04:38:54,422] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:38:54,498] {logging_mixin.py:115} INFO - [2023-10-26 04:38:54,498] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:38:54,502] {logging_mixin.py:115} INFO - [2023-10-26 04:38:54,502] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:38:54,581] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 2.339 seconds
+[2023-10-26 04:39:24,741] {processor.py:153} INFO - Started process (PID=136) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:39:24,743] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:39:24,745] {logging_mixin.py:115} INFO - [2023-10-26 04:39:24,745] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:39:26,296] {logging_mixin.py:115} INFO - [2023-10-26 04:39:26,295] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:39:26,363] {logging_mixin.py:115} INFO - [2023-10-26 04:39:26,360] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:39:26,483] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:39:26,865] {logging_mixin.py:115} INFO - [2023-10-26 04:39:26,864] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:39:27,037] {logging_mixin.py:115} INFO - [2023-10-26 04:39:27,036] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:39:27,039] {logging_mixin.py:115} INFO - [2023-10-26 04:39:27,038] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:39:27,213] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 2.481 seconds
+[2023-10-26 04:39:57,553] {processor.py:153} INFO - Started process (PID=204) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:39:57,555] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:39:57,556] {logging_mixin.py:115} INFO - [2023-10-26 04:39:57,556] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:39:58,145] {logging_mixin.py:115} INFO - [2023-10-26 04:39:58,145] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:39:58,184] {logging_mixin.py:115} INFO - [2023-10-26 04:39:58,183] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:39:58,232] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:39:58,300] {logging_mixin.py:115} INFO - [2023-10-26 04:39:58,299] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:39:58,353] {logging_mixin.py:115} INFO - [2023-10-26 04:39:58,353] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:39:58,355] {logging_mixin.py:115} INFO - [2023-10-26 04:39:58,355] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:39:58,411] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.862 seconds
+[2023-10-26 04:40:29,153] {processor.py:153} INFO - Started process (PID=261) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:40:29,156] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:40:29,158] {logging_mixin.py:115} INFO - [2023-10-26 04:40:29,158] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:40:29,856] {logging_mixin.py:115} INFO - [2023-10-26 04:40:29,856] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:40:29,890] {logging_mixin.py:115} INFO - [2023-10-26 04:40:29,888] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:40:29,937] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:40:29,978] {logging_mixin.py:115} INFO - [2023-10-26 04:40:29,977] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:40:30,025] {logging_mixin.py:115} INFO - [2023-10-26 04:40:30,025] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:40:30,026] {logging_mixin.py:115} INFO - [2023-10-26 04:40:30,026] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:40:30,065] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.920 seconds
+[2023-10-26 04:41:00,206] {processor.py:153} INFO - Started process (PID=319) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:41:00,208] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:41:00,212] {logging_mixin.py:115} INFO - [2023-10-26 04:41:00,211] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:41:00,871] {logging_mixin.py:115} INFO - [2023-10-26 04:41:00,870] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:41:00,915] {logging_mixin.py:115} INFO - [2023-10-26 04:41:00,913] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:41:00,959] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:41:01,358] {logging_mixin.py:115} INFO - [2023-10-26 04:41:01,357] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:41:01,440] {logging_mixin.py:115} INFO - [2023-10-26 04:41:01,440] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:41:01,443] {logging_mixin.py:115} INFO - [2023-10-26 04:41:01,442] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:41:01,505] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 1.306 seconds
+[2023-10-26 04:41:31,922] {processor.py:153} INFO - Started process (PID=387) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:41:31,924] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:41:31,926] {logging_mixin.py:115} INFO - [2023-10-26 04:41:31,926] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:41:32,514] {logging_mixin.py:115} INFO - [2023-10-26 04:41:32,514] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:41:32,553] {logging_mixin.py:115} INFO - [2023-10-26 04:41:32,551] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:41:32,595] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:41:32,631] {logging_mixin.py:115} INFO - [2023-10-26 04:41:32,631] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:41:32,675] {logging_mixin.py:115} INFO - [2023-10-26 04:41:32,675] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:41:32,676] {logging_mixin.py:115} INFO - [2023-10-26 04:41:32,676] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:41:32,720] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.806 seconds
+[2023-10-26 04:42:02,825] {processor.py:153} INFO - Started process (PID=445) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:42:02,826] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:42:02,828] {logging_mixin.py:115} INFO - [2023-10-26 04:42:02,828] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:42:03,428] {logging_mixin.py:115} INFO - [2023-10-26 04:42:03,427] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:42:03,475] {logging_mixin.py:115} INFO - [2023-10-26 04:42:03,473] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:42:03,513] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:42:03,544] {logging_mixin.py:115} INFO - [2023-10-26 04:42:03,543] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:42:03,592] {logging_mixin.py:115} INFO - [2023-10-26 04:42:03,592] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:42:03,594] {logging_mixin.py:115} INFO - [2023-10-26 04:42:03,594] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:42:03,644] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.824 seconds
+[2023-10-26 04:42:33,888] {processor.py:153} INFO - Started process (PID=504) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:42:33,890] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:42:33,891] {logging_mixin.py:115} INFO - [2023-10-26 04:42:33,891] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:42:34,529] {logging_mixin.py:115} INFO - [2023-10-26 04:42:34,529] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:42:34,565] {logging_mixin.py:115} INFO - [2023-10-26 04:42:34,564] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:42:34,610] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:42:34,783] {logging_mixin.py:115} INFO - [2023-10-26 04:42:34,782] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:42:34,848] {logging_mixin.py:115} INFO - [2023-10-26 04:42:34,848] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:42:34,850] {logging_mixin.py:115} INFO - [2023-10-26 04:42:34,849] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:42:34,906] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 1.023 seconds
+[2023-10-26 04:43:05,477] {processor.py:153} INFO - Started process (PID=571) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:43:05,479] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:43:05,483] {logging_mixin.py:115} INFO - [2023-10-26 04:43:05,482] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:43:06,131] {logging_mixin.py:115} INFO - [2023-10-26 04:43:06,131] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:43:06,178] {logging_mixin.py:115} INFO - [2023-10-26 04:43:06,175] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:43:06,227] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:43:06,259] {logging_mixin.py:115} INFO - [2023-10-26 04:43:06,258] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:43:06,338] {logging_mixin.py:115} INFO - [2023-10-26 04:43:06,337] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:43:06,340] {logging_mixin.py:115} INFO - [2023-10-26 04:43:06,340] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:43:06,375] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.905 seconds
+[2023-10-26 04:43:36,663] {processor.py:153} INFO - Started process (PID=631) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:43:36,665] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:43:36,667] {logging_mixin.py:115} INFO - [2023-10-26 04:43:36,667] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:43:37,534] {logging_mixin.py:115} INFO - [2023-10-26 04:43:37,534] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:43:37,575] {logging_mixin.py:115} INFO - [2023-10-26 04:43:37,573] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:43:37,620] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:43:37,656] {logging_mixin.py:115} INFO - [2023-10-26 04:43:37,655] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:43:37,725] {logging_mixin.py:115} INFO - [2023-10-26 04:43:37,725] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:43:37,728] {logging_mixin.py:115} INFO - [2023-10-26 04:43:37,727] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:43:37,768] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 1.113 seconds
+[2023-10-26 04:44:08,009] {processor.py:153} INFO - Started process (PID=699) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:44:08,011] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:44:08,014] {logging_mixin.py:115} INFO - [2023-10-26 04:44:08,014] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:44:08,784] {logging_mixin.py:115} INFO - [2023-10-26 04:44:08,783] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:44:08,832] {logging_mixin.py:115} INFO - [2023-10-26 04:44:08,831] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:44:08,875] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:44:09,029] {logging_mixin.py:115} INFO - [2023-10-26 04:44:09,028] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:44:09,088] {logging_mixin.py:115} INFO - [2023-10-26 04:44:09,088] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:44:09,090] {logging_mixin.py:115} INFO - [2023-10-26 04:44:09,090] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:44:09,144] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 1.141 seconds
+[2023-10-26 04:44:39,630] {processor.py:153} INFO - Started process (PID=757) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:44:39,632] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:44:39,634] {logging_mixin.py:115} INFO - [2023-10-26 04:44:39,634] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:44:40,307] {logging_mixin.py:115} INFO - [2023-10-26 04:44:40,307] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:44:40,346] {logging_mixin.py:115} INFO - [2023-10-26 04:44:40,344] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:44:40,396] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:44:40,436] {logging_mixin.py:115} INFO - [2023-10-26 04:44:40,434] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:44:40,484] {logging_mixin.py:115} INFO - [2023-10-26 04:44:40,484] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:44:40,485] {logging_mixin.py:115} INFO - [2023-10-26 04:44:40,485] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:44:40,537] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.914 seconds
+[2023-10-26 04:45:10,634] {processor.py:153} INFO - Started process (PID=814) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:45:10,635] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:45:10,637] {logging_mixin.py:115} INFO - [2023-10-26 04:45:10,637] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:45:11,199] {logging_mixin.py:115} INFO - [2023-10-26 04:45:11,198] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:45:11,232] {logging_mixin.py:115} INFO - [2023-10-26 04:45:11,230] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:45:11,269] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:45:11,295] {logging_mixin.py:115} INFO - [2023-10-26 04:45:11,294] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:45:11,376] {logging_mixin.py:115} INFO - [2023-10-26 04:45:11,376] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:45:11,378] {logging_mixin.py:115} INFO - [2023-10-26 04:45:11,378] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:45:11,413] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.784 seconds
+[2023-10-26 04:45:41,541] {processor.py:153} INFO - Started process (PID=880) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:45:41,544] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:45:41,547] {logging_mixin.py:115} INFO - [2023-10-26 04:45:41,547] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:45:42,820] {logging_mixin.py:115} INFO - [2023-10-26 04:45:42,818] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:45:42,933] {logging_mixin.py:115} INFO - [2023-10-26 04:45:42,930] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:45:43,005] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:45:43,348] {logging_mixin.py:115} INFO - [2023-10-26 04:45:43,347] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:45:43,426] {logging_mixin.py:115} INFO - [2023-10-26 04:45:43,426] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:45:43,428] {logging_mixin.py:115} INFO - [2023-10-26 04:45:43,428] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:45:43,489] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 1.967 seconds
+[2023-10-26 04:46:13,649] {processor.py:153} INFO - Started process (PID=940) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:46:13,651] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:46:13,653] {logging_mixin.py:115} INFO - [2023-10-26 04:46:13,653] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:46:14,236] {logging_mixin.py:115} INFO - [2023-10-26 04:46:14,236] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:46:14,270] {logging_mixin.py:115} INFO - [2023-10-26 04:46:14,268] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:46:14,311] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:46:14,347] {logging_mixin.py:115} INFO - [2023-10-26 04:46:14,346] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:46:14,393] {logging_mixin.py:115} INFO - [2023-10-26 04:46:14,393] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:46:14,395] {logging_mixin.py:115} INFO - [2023-10-26 04:46:14,394] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:46:14,440] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.797 seconds
+[2023-10-26 04:46:45,239] {processor.py:153} INFO - Started process (PID=999) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:46:45,241] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:46:45,243] {logging_mixin.py:115} INFO - [2023-10-26 04:46:45,243] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:46:45,861] {logging_mixin.py:115} INFO - [2023-10-26 04:46:45,861] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:46:45,900] {logging_mixin.py:115} INFO - [2023-10-26 04:46:45,898] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:46:45,947] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:46:45,984] {logging_mixin.py:115} INFO - [2023-10-26 04:46:45,983] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:46:46,048] {logging_mixin.py:115} INFO - [2023-10-26 04:46:46,048] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:46:46,050] {logging_mixin.py:115} INFO - [2023-10-26 04:46:46,050] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:46:46,108] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.879 seconds
+[2023-10-26 04:47:16,280] {processor.py:153} INFO - Started process (PID=1067) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:47:16,281] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:47:16,283] {logging_mixin.py:115} INFO - [2023-10-26 04:47:16,283] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:47:17,033] {logging_mixin.py:115} INFO - [2023-10-26 04:47:17,033] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:47:17,080] {logging_mixin.py:115} INFO - [2023-10-26 04:47:17,077] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:47:17,121] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:47:17,283] {logging_mixin.py:115} INFO - [2023-10-26 04:47:17,282] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:47:17,349] {logging_mixin.py:115} INFO - [2023-10-26 04:47:17,349] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:47:17,351] {logging_mixin.py:115} INFO - [2023-10-26 04:47:17,351] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:47:17,409] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 1.134 seconds
+[2023-10-26 04:47:47,518] {processor.py:153} INFO - Started process (PID=1127) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:47:47,521] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:47:47,523] {logging_mixin.py:115} INFO - [2023-10-26 04:47:47,522] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:47:48,107] {logging_mixin.py:115} INFO - [2023-10-26 04:47:48,107] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:47:48,151] {logging_mixin.py:115} INFO - [2023-10-26 04:47:48,149] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:47:48,207] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:47:48,255] {logging_mixin.py:115} INFO - [2023-10-26 04:47:48,253] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:47:48,304] {logging_mixin.py:115} INFO - [2023-10-26 04:47:48,304] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:47:48,306] {logging_mixin.py:115} INFO - [2023-10-26 04:47:48,306] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:47:48,358] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.846 seconds
+[2023-10-26 04:48:18,975] {processor.py:153} INFO - Started process (PID=1184) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:48:18,977] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:48:18,979] {logging_mixin.py:115} INFO - [2023-10-26 04:48:18,979] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:48:19,524] {logging_mixin.py:115} INFO - [2023-10-26 04:48:19,524] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:48:19,561] {logging_mixin.py:115} INFO - [2023-10-26 04:48:19,559] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:48:19,600] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:48:19,630] {logging_mixin.py:115} INFO - [2023-10-26 04:48:19,629] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:48:19,670] {logging_mixin.py:115} INFO - [2023-10-26 04:48:19,670] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:48:19,672] {logging_mixin.py:115} INFO - [2023-10-26 04:48:19,672] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:48:19,713] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.743 seconds
+[2023-10-26 04:48:50,004] {processor.py:153} INFO - Started process (PID=1254) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:48:50,005] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:48:50,008] {logging_mixin.py:115} INFO - [2023-10-26 04:48:50,007] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:48:50,560] {logging_mixin.py:115} INFO - [2023-10-26 04:48:50,560] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:48:50,603] {logging_mixin.py:115} INFO - [2023-10-26 04:48:50,602] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:48:50,646] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:48:50,770] {logging_mixin.py:115} INFO - [2023-10-26 04:48:50,769] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:48:50,821] {logging_mixin.py:115} INFO - [2023-10-26 04:48:50,820] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:48:50,822] {logging_mixin.py:115} INFO - [2023-10-26 04:48:50,822] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:48:50,865] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.867 seconds
+[2023-10-26 04:49:21,793] {processor.py:153} INFO - Started process (PID=1311) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:49:21,794] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:49:21,796] {logging_mixin.py:115} INFO - [2023-10-26 04:49:21,796] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:49:22,371] {logging_mixin.py:115} INFO - [2023-10-26 04:49:22,371] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:49:22,413] {logging_mixin.py:115} INFO - [2023-10-26 04:49:22,412] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:49:22,472] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:49:22,514] {logging_mixin.py:115} INFO - [2023-10-26 04:49:22,513] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:49:22,568] {logging_mixin.py:115} INFO - [2023-10-26 04:49:22,568] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:49:22,570] {logging_mixin.py:115} INFO - [2023-10-26 04:49:22,570] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:49:22,606] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.821 seconds
+[2023-10-26 04:49:52,739] {processor.py:153} INFO - Started process (PID=1368) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:49:52,743] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:49:52,745] {logging_mixin.py:115} INFO - [2023-10-26 04:49:52,745] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:49:53,335] {logging_mixin.py:115} INFO - [2023-10-26 04:49:53,335] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:49:53,374] {logging_mixin.py:115} INFO - [2023-10-26 04:49:53,372] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:49:53,425] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:49:53,456] {logging_mixin.py:115} INFO - [2023-10-26 04:49:53,455] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:49:53,511] {logging_mixin.py:115} INFO - [2023-10-26 04:49:53,510] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:49:53,513] {logging_mixin.py:115} INFO - [2023-10-26 04:49:53,512] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:49:53,574] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.844 seconds
+[2023-10-26 04:50:24,163] {processor.py:153} INFO - Started process (PID=1425) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:50:24,165] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:50:24,168] {logging_mixin.py:115} INFO - [2023-10-26 04:50:24,168] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:50:25,098] {logging_mixin.py:115} INFO - [2023-10-26 04:50:25,098] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:50:25,141] {logging_mixin.py:115} INFO - [2023-10-26 04:50:25,140] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:50:25,183] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:50:25,457] {logging_mixin.py:115} INFO - [2023-10-26 04:50:25,456] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:50:25,563] {logging_mixin.py:115} INFO - [2023-10-26 04:50:25,563] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:50:25,565] {logging_mixin.py:115} INFO - [2023-10-26 04:50:25,565] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:50:25,681] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 1.525 seconds
+[2023-10-26 04:50:55,939] {processor.py:153} INFO - Started process (PID=1491) to work on /opt/airflow/dags/init.py
+[2023-10-26 04:50:55,941] {processor.py:641} INFO - Processing file /opt/airflow/dags/init.py for tasks to queue
+[2023-10-26 04:50:55,943] {logging_mixin.py:115} INFO - [2023-10-26 04:50:55,943] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/init.py
+[2023-10-26 04:50:56,618] {logging_mixin.py:115} INFO - [2023-10-26 04:50:56,617] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-10-26 04:50:56,645] {logging_mixin.py:115} INFO - [2023-10-26 04:50:56,643] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-26 04:50:56,683] {processor.py:651} INFO - DAG(s) dict_keys(['one_time_start_dag', 'daily_update_dag']) retrieved from /opt/airflow/dags/init.py
+[2023-10-26 04:50:56,722] {logging_mixin.py:115} INFO - [2023-10-26 04:50:56,721] {dag.py:2420} INFO - Sync 2 DAGs
+[2023-10-26 04:50:56,767] {logging_mixin.py:115} INFO - [2023-10-26 04:50:56,766] {dag.py:2972} INFO - Setting next_dagrun for daily_update_dag to 2023-10-24T05:45:00+00:00, run_after=2023-10-25T05:45:00+00:00
+[2023-10-26 04:50:56,768] {logging_mixin.py:115} INFO - [2023-10-26 04:50:56,768] {dag.py:2972} INFO - Setting next_dagrun for one_time_start_dag to None, run_after=None
+[2023-10-26 04:50:56,816] {processor.py:161} INFO - Processing /opt/airflow/dags/init.py took 0.889 seconds

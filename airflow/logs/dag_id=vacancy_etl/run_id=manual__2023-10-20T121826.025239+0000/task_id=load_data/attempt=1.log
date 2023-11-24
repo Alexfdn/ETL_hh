@@ -1,0 +1,33 @@
+[2023-10-20 12:18:27,309] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: vacancy_etl.load_data manual__2023-10-20T12:18:26.025239+00:00 [queued]>
+[2023-10-20 12:18:27,329] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: vacancy_etl.load_data manual__2023-10-20T12:18:26.025239+00:00 [queued]>
+[2023-10-20 12:18:27,330] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-20 12:18:27,331] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-10-20 12:18:27,333] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-20 12:18:27,362] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): load_data> on 2023-10-20 12:18:26.025239+00:00
+[2023-10-20 12:18:27,370] {standard_task_runner.py:52} INFO - Started process 402 to run task
+[2023-10-20 12:18:27,373] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'vacancy_etl', 'load_data', 'manual__2023-10-20T12:18:26.025239+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp2wlvean1', '--error-file', '/tmp/tmpyuy1jqi_']
+[2023-10-20 12:18:27,374] {standard_task_runner.py:80} INFO - Job 19: Subtask load_data
+[2023-10-20 12:18:27,504] {task_command.py:371} INFO - Running <TaskInstance: vacancy_etl.load_data manual__2023-10-20T12:18:26.025239+00:00 [running]> on host 0fa47167aae4
+[2023-10-20 12:18:27,641] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=vacancy_etl
+AIRFLOW_CTX_TASK_ID=load_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-20T12:18:26.025239+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-20T12:18:26.025239+00:00
+[2023-10-20 12:18:27,658] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-10-20 12:18:27,683] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test.py", line 19, in insert_db
+    cur = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+[2023-10-20 12:18:27,706] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=vacancy_etl, task_id=load_data, execution_date=20231020T121826, start_date=20231020T121827, end_date=20231020T121827
+[2023-10-20 12:18:27,727] {standard_task_runner.py:97} ERROR - Failed to execute job 19 for task load_data ('NoneType' object has no attribute 'cursor'; 402)
+[2023-10-20 12:18:27,748] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-10-20 12:18:27,797] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,84 @@
+[2023-11-21 06:01:23,647] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_area scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 06:01:23,675] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_area scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 06:01:23,676] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 06:01:23,677] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2023-11-21 06:01:23,678] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 06:01:23,713] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_dim_area> on 2023-11-20 00:00:00+00:00
+[2023-11-21 06:01:23,720] {standard_task_runner.py:52} INFO - Started process 4400 to run task
+[2023-11-21 06:01:23,724] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_dim_area', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '239', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpq05eznjz', '--error-file', '/tmp/tmpkkcsaliw']
+[2023-11-21 06:01:23,725] {standard_task_runner.py:80} INFO - Job 239: Subtask load_core_dim_area
+[2023-11-21 06:01:23,837] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_dim_area scheduled__2023-11-20T00:00:00+00:00 [running]> on host f44f09cebae7
+[2023-11-21 06:01:23,964] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_dim_area
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-21 06:01:23,977] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-21 06:01:24,020] {dbapi.py:231} INFO - Running statement: INSERT INTO core.dim_area (area_id, name)
+            SELECT DISTINCT 
+                area_id,
+                area_name
+            FROM staging.vacancy, parameters: None
+[2023-11-21 06:01:24,031] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 235, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "dim_area_area_id_key"
+DETAIL:  Key (area_id)=(53) already exists.
+
+[2023-11-21 06:01:24,050] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=etl_hh, task_id=load_core_dim_area, execution_date=20231120T000000, start_date=20231121T060123, end_date=20231121T060124
+[2023-11-21 06:01:24,072] {standard_task_runner.py:97} ERROR - Failed to execute job 239 for task load_core_dim_area (duplicate key value violates unique constraint "dim_area_area_id_key"
+DETAIL:  Key (area_id)=(53) already exists.
+; 4400)
+[2023-11-21 06:01:24,119] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-11-21 06:01:24,216] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-21 08:23:38,462] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_area scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 08:23:38,479] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_area scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21 08:23:38,480] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 08:23:38,480] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2023-11-21 08:23:38,481] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 08:23:38,506] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_dim_area> on 2023-11-20 00:00:00+00:00
+[2023-11-21 08:23:38,512] {standard_task_runner.py:52} INFO - Started process 5181 to run task
+[2023-11-21 08:23:38,516] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_dim_area', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '247', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpguojzwrf', '--error-file', '/tmp/tmpahvc2kef']
+[2023-11-21 08:23:38,517] {standard_task_runner.py:80} INFO - Job 247: Subtask load_core_dim_area
+[2023-11-21 08:23:38,612] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_dim_area scheduled__2023-11-20T00:00:00+00:00 [running]> on host f44f09cebae7
+[2023-11-21 08:23:38,733] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_dim_area
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-20T00:00:00+00:00
+[2023-11-21 08:23:38,747] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-21 08:23:38,771] {dbapi.py:231} INFO - Running statement: INSERT INTO core.dim_area (area_id, name)
+            SELECT DISTINCT 
+                area_id,
+                area_name
+            FROM staging.vacancy, parameters: None
+[2023-11-21 08:23:38,781] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 235, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "dim_area_area_id_key"
+DETAIL:  Key (area_id)=(53) already exists.
+
+[2023-11-21 08:23:38,796] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=etl_hh, task_id=load_core_dim_area, execution_date=20231120T000000, start_date=20231121T082338, end_date=20231121T082338
+[2023-11-21 08:23:38,818] {standard_task_runner.py:97} ERROR - Failed to execute job 247 for task load_core_dim_area (duplicate key value violates unique constraint "dim_area_area_id_key"
+DETAIL:  Key (area_id)=(53) already exists.
+; 5181)
+[2023-11-21 08:23:38,847] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-11-21 08:23:38,920] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

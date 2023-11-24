@@ -1,0 +1,23 @@
+[2023-11-18 19:36:50,788] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_staging_layer manual__2023-11-18T19:36:47.836543+00:00 [queued]>
+[2023-11-18 19:36:50,811] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_staging_layer manual__2023-11-18T19:36:47.836543+00:00 [queued]>
+[2023-11-18 19:36:50,812] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 19:36:50,814] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-18 19:36:50,815] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 19:36:50,842] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): load_staging_layer> on 2023-11-18 19:36:47.836543+00:00
+[2023-11-18 19:36:50,848] {standard_task_runner.py:52} INFO - Started process 13402 to run task
+[2023-11-18 19:36:50,852] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_staging_layer', 'manual__2023-11-18T19:36:47.836543+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpvi72e05o', '--error-file', '/tmp/tmp7eci56cm']
+[2023-11-18 19:36:50,853] {standard_task_runner.py:80} INFO - Job 95: Subtask load_staging_layer
+[2023-11-18 19:36:50,951] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_staging_layer manual__2023-11-18T19:36:47.836543+00:00 [running]> on host 2e176173f0f7
+[2023-11-18 19:36:51,068] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_staging_layer
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-18T19:36:47.836543+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-18T19:36:47.836543+00:00
+[2023-11-18 19:37:06,288] {python.py:173} INFO - Done. Returned value was: None
+[2023-11-18 19:37:06,311] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_staging_layer, execution_date=20231118T193647, start_date=20231118T193650, end_date=20231118T193706
+[2023-11-18 19:37:06,366] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-18 19:37:06,435] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

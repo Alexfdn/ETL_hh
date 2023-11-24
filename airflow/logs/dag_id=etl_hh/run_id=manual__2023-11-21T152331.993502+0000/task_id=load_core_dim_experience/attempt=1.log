@@ -1,0 +1,45 @@
+[2023-11-21 15:24:04,617] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_experience manual__2023-11-21T15:23:31.993502+00:00 [queued]>
+[2023-11-21 15:24:04,650] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_core_dim_experience manual__2023-11-21T15:23:31.993502+00:00 [queued]>
+[2023-11-21 15:24:04,651] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 15:24:04,664] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-21 15:24:04,665] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-21 15:24:04,707] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): load_core_dim_experience> on 2023-11-21 15:23:31.993502+00:00
+[2023-11-21 15:24:04,717] {standard_task_runner.py:52} INFO - Started process 172 to run task
+[2023-11-21 15:24:04,723] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_core_dim_experience', 'manual__2023-11-21T15:23:31.993502+00:00', '--job-id', '268', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmps57js4bu', '--error-file', '/tmp/tmpaya8sau0']
+[2023-11-21 15:24:04,724] {standard_task_runner.py:80} INFO - Job 268: Subtask load_core_dim_experience
+[2023-11-21 15:24:04,880] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_core_dim_experience manual__2023-11-21T15:23:31.993502+00:00 [running]> on host b47ed23e9d21
+[2023-11-21 15:24:05,099] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_core_dim_experience
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T15:23:31.993502+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-21T15:23:31.993502+00:00
+[2023-11-21 15:24:05,119] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-21 15:24:05,154] {dbapi.py:231} INFO - Running statement: 
+        MERGE INTO core.dim_experience AS trg
+        USING(
+            SELECT DISTINCT 
+                experience_id,
+                experience_name
+            FROM staging.vacancy) AS src
+        ON trg.experience_id = src.experience_id
+        WHEN NOT MATCHED
+        THEN INSERT(
+            experience_id,
+            name)
+        VALUES(
+            src.experience_id,
+            src.experience_name)
+        WHEN MATCHED
+                AND (COALESCE(trg.name, '') <> COALESCE(src.experience_name, '')
+                OR COALESCE(trg.experience_id,'') <> COALESCE(src.experience_id,''))
+        THEN UPDATE
+        SET 
+            experience_id = src.experience_id, 
+            name = src.experience_name, parameters: None
+[2023-11-21 15:24:05,212] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=load_core_dim_experience, execution_date=20231121T152331, start_date=20231121T152404, end_date=20231121T152405
+[2023-11-21 15:24:05,257] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-21 15:24:05,385] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

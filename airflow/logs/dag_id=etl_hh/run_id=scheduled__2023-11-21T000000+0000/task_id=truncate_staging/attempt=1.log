@@ -1,0 +1,96 @@
+[2023-11-22 06:33:43,093] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 06:33:43,138] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 06:33:43,139] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 06:33:43,140] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 06:33:43,142] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 06:33:43,204] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): truncate_staging> on 2023-11-21 00:00:00+00:00
+[2023-11-22 06:33:43,211] {standard_task_runner.py:52} INFO - Started process 246 to run task
+[2023-11-22 06:33:43,216] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'truncate_staging', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpj71_agjx', '--error-file', '/tmp/tmpim7cxjrf']
+[2023-11-22 06:33:43,217] {standard_task_runner.py:80} INFO - Job 5: Subtask truncate_staging
+[2023-11-22 06:33:43,327] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 06:33:43,436] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=truncate_staging
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 06:33:43,452] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 06:33:43,481] {dbapi.py:231} INFO - Running statement: TRUNCATE staging.vacancy, parameters: None
+[2023-11-22 06:33:43,523] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=truncate_staging, execution_date=20231121T000000, start_date=20231122T063343, end_date=20231122T063343
+[2023-11-22 06:33:43,556] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 06:33:43,705] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-22 19:13:36,215] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:13:36,244] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:13:36,245] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:13:36,246] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 19:13:36,246] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:13:36,276] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): truncate_staging> on 2023-11-21 00:00:00+00:00
+[2023-11-22 19:13:36,284] {standard_task_runner.py:52} INFO - Started process 453 to run task
+[2023-11-22 19:13:36,288] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'truncate_staging', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmph_1uwzh6', '--error-file', '/tmp/tmpgppvxl23']
+[2023-11-22 19:13:36,289] {standard_task_runner.py:80} INFO - Job 45: Subtask truncate_staging
+[2023-11-22 19:13:36,408] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 19:13:36,587] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=truncate_staging
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 19:13:36,610] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 19:13:36,645] {dbapi.py:231} INFO - Running statement: TRUNCATE staging.vacancy, parameters: None
+[2023-11-22 19:13:36,694] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=truncate_staging, execution_date=20231121T000000, start_date=20231122T191336, end_date=20231122T191336
+[2023-11-22 19:13:36,742] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 19:13:36,884] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-22 19:16:24,814] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:16:24,850] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:16:24,851] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:16:24,852] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 19:16:24,853] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:16:24,910] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): truncate_staging> on 2023-11-21 00:00:00+00:00
+[2023-11-22 19:16:24,924] {standard_task_runner.py:52} INFO - Started process 577 to run task
+[2023-11-22 19:16:24,929] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'truncate_staging', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp_fcp92lh', '--error-file', '/tmp/tmpm8yyc4jl']
+[2023-11-22 19:16:24,930] {standard_task_runner.py:80} INFO - Job 53: Subtask truncate_staging
+[2023-11-22 19:16:25,108] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 19:16:25,353] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=truncate_staging
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 19:16:25,371] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 19:16:25,407] {dbapi.py:231} INFO - Running statement: TRUNCATE staging.vacancy, parameters: None
+[2023-11-22 19:16:25,467] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=truncate_staging, execution_date=20231121T000000, start_date=20231122T191624, end_date=20231122T191625
+[2023-11-22 19:16:25,545] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 19:16:25,673] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-22 19:18:41,099] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:18:41,139] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [queued]>
+[2023-11-22 19:18:41,140] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:18:41,141] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-22 19:18:41,142] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-22 19:18:41,206] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): truncate_staging> on 2023-11-21 00:00:00+00:00
+[2023-11-22 19:18:41,216] {standard_task_runner.py:52} INFO - Started process 674 to run task
+[2023-11-22 19:18:41,222] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'truncate_staging', 'scheduled__2023-11-21T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp5823rjfm', '--error-file', '/tmp/tmpmunndblo']
+[2023-11-22 19:18:41,224] {standard_task_runner.py:80} INFO - Job 61: Subtask truncate_staging
+[2023-11-22 19:18:41,408] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.truncate_staging scheduled__2023-11-21T00:00:00+00:00 [running]> on host 9ac5eb002233
+[2023-11-22 19:18:41,632] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=truncate_staging
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-11-21T00:00:00+00:00
+[2023-11-22 19:18:41,653] {base.py:68} INFO - Using connection ID 'my_db_conn' for task execution.
+[2023-11-22 19:18:41,688] {dbapi.py:231} INFO - Running statement: TRUNCATE staging.vacancy, parameters: None
+[2023-11-22 19:18:41,752] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_hh, task_id=truncate_staging, execution_date=20231121T000000, start_date=20231122T191841, end_date=20231122T191841
+[2023-11-22 19:18:41,798] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-11-22 19:18:41,957] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

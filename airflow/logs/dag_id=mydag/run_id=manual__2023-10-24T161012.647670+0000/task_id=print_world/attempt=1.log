@@ -1,0 +1,24 @@
+[2023-10-24 16:10:16,868] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: mydag.print_world manual__2023-10-24T16:10:12.647670+00:00 [queued]>
+[2023-10-24 16:10:16,890] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: mydag.print_world manual__2023-10-24T16:10:12.647670+00:00 [queued]>
+[2023-10-24 16:10:16,891] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-24 16:10:16,892] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-10-24 16:10:16,904] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-24 16:10:16,944] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): print_world> on 2023-10-24 16:10:12.647670+00:00
+[2023-10-24 16:10:16,955] {standard_task_runner.py:52} INFO - Started process 527 to run task
+[2023-10-24 16:10:16,959] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'mydag', 'print_world', 'manual__2023-10-24T16:10:12.647670+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpurs7t8io', '--error-file', '/tmp/tmpc1c8hgkm']
+[2023-10-24 16:10:16,961] {standard_task_runner.py:80} INFO - Job 47: Subtask print_world
+[2023-10-24 16:10:17,105] {task_command.py:371} INFO - Running <TaskInstance: mydag.print_world manual__2023-10-24T16:10:12.647670+00:00 [running]> on host d14eca7535dc
+[2023-10-24 16:10:17,295] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=romank
+AIRFLOW_CTX_DAG_ID=mydag
+AIRFLOW_CTX_TASK_ID=print_world
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-24T16:10:12.647670+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-24T16:10:12.647670+00:00
+[2023-10-24 16:10:17,297] {logging_mixin.py:115} INFO - Hello Tom, 20
+[2023-10-24 16:10:17,298] {python.py:173} INFO - Done. Returned value was: None
+[2023-10-24 16:10:17,324] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=mydag, task_id=print_world, execution_date=20231024T161012, start_date=20231024T161016, end_date=20231024T161017
+[2023-10-24 16:10:17,374] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-24 16:10:17,437] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,38 @@
+[2023-10-20 12:16:01,130] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: vacancy_etl.load_data scheduled__2023-10-20T12:15:00+00:00 [queued]>
+[2023-10-20 12:16:01,144] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: vacancy_etl.load_data scheduled__2023-10-20T12:15:00+00:00 [queued]>
+[2023-10-20 12:16:01,144] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-20 12:16:01,145] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2023-10-20 12:16:01,146] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-20 12:16:01,164] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): load_data> on 2023-10-20 12:15:00+00:00
+[2023-10-20 12:16:01,170] {standard_task_runner.py:52} INFO - Started process 284 to run task
+[2023-10-20 12:16:01,174] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'vacancy_etl', 'load_data', 'scheduled__2023-10-20T12:15:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpezikyh6w', '--error-file', '/tmp/tmpvbbxvmeb']
+[2023-10-20 12:16:01,175] {standard_task_runner.py:80} INFO - Job 16: Subtask load_data
+[2023-10-20 12:16:01,262] {task_command.py:371} INFO - Running <TaskInstance: vacancy_etl.load_data scheduled__2023-10-20T12:15:00+00:00 [running]> on host 0fa47167aae4
+[2023-10-20 12:16:01,418] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=vacancy_etl
+AIRFLOW_CTX_TASK_ID=load_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-20T12:15:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-10-20T12:15:00+00:00
+[2023-10-20 12:16:01,457] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test.py", line 18, in insert_db
+    conn = get_postgres_conn(conn_id)
+  File "/opt/airflow/dags/test.py", line 11, in get_postgres_conn
+    hook = BaseHook.get_connection(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `***` isn't defined
+[2023-10-20 12:16:01,472] {taskinstance.py:1420} INFO - Marking task as FAILED. dag_id=vacancy_etl, task_id=load_data, execution_date=20231020T121500, start_date=20231020T121601, end_date=20231020T121601
+[2023-10-20 12:16:01,491] {standard_task_runner.py:97} ERROR - Failed to execute job 16 for task load_data (The conn_id `***` isn't defined; 284)
+[2023-10-20 12:16:01,506] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-10-20 12:16:01,564] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,32 @@
+[2023-11-18 15:17:09,722] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_staging_layer manual__2023-11-18T15:17:07.359460+00:00 [queued]>
+[2023-11-18 15:17:09,751] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_hh.load_staging_layer manual__2023-11-18T15:17:07.359460+00:00 [queued]>
+[2023-11-18 15:17:09,752] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 15:17:09,753] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2023-11-18 15:17:09,754] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-18 15:17:09,787] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): load_staging_layer> on 2023-11-18 15:17:07.359460+00:00
+[2023-11-18 15:17:09,796] {standard_task_runner.py:52} INFO - Started process 5706 to run task
+[2023-11-18 15:17:09,801] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_hh', 'load_staging_layer', 'manual__2023-11-18T15:17:07.359460+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpns196diu', '--error-file', '/tmp/tmp4upez5vv']
+[2023-11-18 15:17:09,803] {standard_task_runner.py:80} INFO - Job 87: Subtask load_staging_layer
+[2023-11-18 15:17:09,925] {task_command.py:371} INFO - Running <TaskInstance: etl_hh.load_staging_layer manual__2023-11-18T15:17:07.359460+00:00 [running]> on host 2e176173f0f7
+[2023-11-18 15:17:10,090] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_hh
+AIRFLOW_CTX_TASK_ID=load_staging_layer
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-18T15:17:07.359460+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-18T15:17:07.359460+00:00
+[2023-11-18 15:17:18,650] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/pipeline.py", line 153, in load_data
+    cursor.execute(sql, row)
+IndexError: tuple index out of range
+[2023-11-18 15:17:18,688] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_hh, task_id=load_staging_layer, execution_date=20231118T151707, start_date=20231118T151709, end_date=20231118T151718
+[2023-11-18 15:17:18,717] {standard_task_runner.py:97} ERROR - Failed to execute job 87 for task load_staging_layer (tuple index out of range; 5706)
+[2023-11-18 15:17:18,767] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-11-18 15:17:18,866] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,1174 @@
+[2023-11-15 18:01:21,395] {processor.py:153} INFO - Started process (PID=15843) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:01:21,397] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:01:21,399] {logging_mixin.py:115} INFO - [2023-11-15 18:01:21,399] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:01:21,535] {logging_mixin.py:115} INFO - [2023-11-15 18:01:21,523] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:01:21,551] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:01:21,590] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.200 seconds
+[2023-11-15 18:01:51,833] {processor.py:153} INFO - Started process (PID=15901) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:01:51,835] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:01:51,836] {logging_mixin.py:115} INFO - [2023-11-15 18:01:51,836] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:01:51,902] {logging_mixin.py:115} INFO - [2023-11-15 18:01:51,892] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:01:51,906] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:01:51,942] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.114 seconds
+[2023-11-15 18:02:22,355] {processor.py:153} INFO - Started process (PID=15966) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:02:22,357] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:02:22,360] {logging_mixin.py:115} INFO - [2023-11-15 18:02:22,359] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:02:22,431] {logging_mixin.py:115} INFO - [2023-11-15 18:02:22,420] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:02:22,436] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:02:22,493] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.143 seconds
+[2023-11-15 18:02:52,970] {processor.py:153} INFO - Started process (PID=16024) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:02:52,972] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:02:52,974] {logging_mixin.py:115} INFO - [2023-11-15 18:02:52,974] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:02:53,052] {logging_mixin.py:115} INFO - [2023-11-15 18:02:53,034] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:02:53,056] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:02:53,119] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.157 seconds
+[2023-11-15 18:03:23,561] {processor.py:153} INFO - Started process (PID=16081) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:03:23,563] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:03:23,565] {logging_mixin.py:115} INFO - [2023-11-15 18:03:23,565] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:03:23,641] {logging_mixin.py:115} INFO - [2023-11-15 18:03:23,629] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:03:23,646] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:03:23,693] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.140 seconds
+[2023-11-15 18:03:54,325] {processor.py:153} INFO - Started process (PID=16140) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:03:54,327] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:03:54,330] {logging_mixin.py:115} INFO - [2023-11-15 18:03:54,330] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:03:54,421] {logging_mixin.py:115} INFO - [2023-11-15 18:03:54,410] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:03:54,426] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:03:54,490] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.176 seconds
+[2023-11-15 18:04:24,608] {processor.py:153} INFO - Started process (PID=16208) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:04:24,609] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:04:24,611] {logging_mixin.py:115} INFO - [2023-11-15 18:04:24,611] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:04:24,673] {logging_mixin.py:115} INFO - [2023-11-15 18:04:24,663] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:04:24,677] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:04:24,725] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.122 seconds
+[2023-11-15 18:04:55,129] {processor.py:153} INFO - Started process (PID=16263) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:04:55,131] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:04:55,134] {logging_mixin.py:115} INFO - [2023-11-15 18:04:55,134] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:04:55,211] {logging_mixin.py:115} INFO - [2023-11-15 18:04:55,201] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:04:55,217] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:04:55,271] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.146 seconds
+[2023-11-15 18:05:25,935] {processor.py:153} INFO - Started process (PID=16321) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:05:25,937] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:05:25,939] {logging_mixin.py:115} INFO - [2023-11-15 18:05:25,939] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:05:26,018] {logging_mixin.py:115} INFO - [2023-11-15 18:05:26,007] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:05:26,023] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:05:26,082] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.153 seconds
+[2023-11-15 18:05:56,484] {processor.py:153} INFO - Started process (PID=16379) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:05:56,486] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:05:56,488] {logging_mixin.py:115} INFO - [2023-11-15 18:05:56,488] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:05:56,557] {logging_mixin.py:115} INFO - [2023-11-15 18:05:56,547] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:05:56,562] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:05:56,603] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.125 seconds
+[2023-11-15 18:06:26,820] {processor.py:153} INFO - Started process (PID=16446) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:06:26,821] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:06:26,823] {logging_mixin.py:115} INFO - [2023-11-15 18:06:26,823] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:06:26,895] {logging_mixin.py:115} INFO - [2023-11-15 18:06:26,884] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:06:26,902] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:06:26,955] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.143 seconds
+[2023-11-15 18:06:57,075] {processor.py:153} INFO - Started process (PID=16504) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:06:57,076] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:06:57,078] {logging_mixin.py:115} INFO - [2023-11-15 18:06:57,078] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:06:57,140] {logging_mixin.py:115} INFO - [2023-11-15 18:06:57,130] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:06:57,145] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:06:57,201] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.131 seconds
+[2023-11-15 18:07:28,262] {processor.py:153} INFO - Started process (PID=16562) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:07:28,267] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:07:28,272] {logging_mixin.py:115} INFO - [2023-11-15 18:07:28,271] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:07:28,347] {logging_mixin.py:115} INFO - [2023-11-15 18:07:28,336] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:07:28,352] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:07:28,404] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.157 seconds
+[2023-11-15 18:07:59,080] {processor.py:153} INFO - Started process (PID=16620) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:07:59,081] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:07:59,083] {logging_mixin.py:115} INFO - [2023-11-15 18:07:59,082] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:07:59,155] {logging_mixin.py:115} INFO - [2023-11-15 18:07:59,145] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:07:59,159] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:07:59,218] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.143 seconds
+[2023-11-15 18:08:29,814] {processor.py:153} INFO - Started process (PID=16687) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:08:29,817] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:08:29,819] {logging_mixin.py:115} INFO - [2023-11-15 18:08:29,819] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:08:29,904] {logging_mixin.py:115} INFO - [2023-11-15 18:08:29,893] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:08:29,909] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:08:29,948] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.142 seconds
+[2023-11-15 18:09:00,281] {processor.py:153} INFO - Started process (PID=16745) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:09:00,284] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:09:00,287] {logging_mixin.py:115} INFO - [2023-11-15 18:09:00,286] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:09:00,376] {logging_mixin.py:115} INFO - [2023-11-15 18:09:00,362] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:09:00,381] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:09:00,463] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.197 seconds
+[2023-11-15 18:09:30,882] {processor.py:153} INFO - Started process (PID=16803) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:09:30,883] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:09:30,885] {logging_mixin.py:115} INFO - [2023-11-15 18:09:30,885] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:09:30,954] {logging_mixin.py:115} INFO - [2023-11-15 18:09:30,944] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:09:30,960] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:09:31,002] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.126 seconds
+[2023-11-15 18:10:01,325] {processor.py:153} INFO - Started process (PID=16861) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:10:01,328] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:10:01,331] {logging_mixin.py:115} INFO - [2023-11-15 18:10:01,331] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:10:01,412] {logging_mixin.py:115} INFO - [2023-11-15 18:10:01,402] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:10:01,416] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:10:01,458] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.140 seconds
+[2023-11-15 18:10:31,897] {processor.py:153} INFO - Started process (PID=16918) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:10:31,899] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:10:31,902] {logging_mixin.py:115} INFO - [2023-11-15 18:10:31,901] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:10:32,013] {logging_mixin.py:115} INFO - [2023-11-15 18:10:32,002] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:10:32,016] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:10:32,089] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.199 seconds
+[2023-11-15 18:11:02,206] {processor.py:153} INFO - Started process (PID=16986) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:11:02,207] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:11:02,213] {logging_mixin.py:115} INFO - [2023-11-15 18:11:02,213] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:11:02,276] {logging_mixin.py:115} INFO - [2023-11-15 18:11:02,264] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:11:02,279] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:11:02,328] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.129 seconds
+[2023-11-15 18:11:32,454] {processor.py:153} INFO - Started process (PID=17045) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:11:32,456] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:11:32,458] {logging_mixin.py:115} INFO - [2023-11-15 18:11:32,458] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:11:32,510] {logging_mixin.py:115} INFO - [2023-11-15 18:11:32,499] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:11:32,513] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:11:32,559] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.110 seconds
+[2023-11-15 18:12:03,076] {processor.py:153} INFO - Started process (PID=17103) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:12:03,078] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:12:03,080] {logging_mixin.py:115} INFO - [2023-11-15 18:12:03,080] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:12:03,157] {logging_mixin.py:115} INFO - [2023-11-15 18:12:03,144] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:12:03,163] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:12:03,240] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.170 seconds
+[2023-11-15 18:12:33,363] {processor.py:153} INFO - Started process (PID=17170) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:12:33,366] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:12:33,370] {logging_mixin.py:115} INFO - [2023-11-15 18:12:33,369] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:12:33,436] {logging_mixin.py:115} INFO - [2023-11-15 18:12:33,424] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:12:33,442] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:12:33,498] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.148 seconds
+[2023-11-15 18:13:03,675] {processor.py:153} INFO - Started process (PID=17228) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:13:03,677] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:13:03,679] {logging_mixin.py:115} INFO - [2023-11-15 18:13:03,679] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:13:03,741] {logging_mixin.py:115} INFO - [2023-11-15 18:13:03,730] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:13:03,745] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:13:03,792] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.123 seconds
+[2023-11-15 18:13:34,213] {processor.py:153} INFO - Started process (PID=17286) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:13:34,214] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:13:34,216] {logging_mixin.py:115} INFO - [2023-11-15 18:13:34,216] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:13:34,281] {logging_mixin.py:115} INFO - [2023-11-15 18:13:34,269] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:13:34,285] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:13:34,336] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.130 seconds
+[2023-11-15 18:14:04,918] {processor.py:153} INFO - Started process (PID=17353) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:14:04,920] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:14:04,923] {logging_mixin.py:115} INFO - [2023-11-15 18:14:04,923] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:14:05,016] {logging_mixin.py:115} INFO - [2023-11-15 18:14:05,003] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:14:05,021] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:14:05,072] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.163 seconds
+[2023-11-15 18:14:35,786] {processor.py:153} INFO - Started process (PID=17411) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:14:35,789] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:14:35,791] {logging_mixin.py:115} INFO - [2023-11-15 18:14:35,790] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:14:35,928] {logging_mixin.py:115} INFO - [2023-11-15 18:14:35,886] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:14:35,933] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:14:35,990] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.211 seconds
+[2023-11-15 18:15:06,272] {processor.py:153} INFO - Started process (PID=17477) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:15:06,273] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:15:06,275] {logging_mixin.py:115} INFO - [2023-11-15 18:15:06,275] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:15:06,328] {logging_mixin.py:115} INFO - [2023-11-15 18:15:06,321] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:15:06,332] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:15:06,371] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.104 seconds
+[2023-11-15 18:15:37,237] {processor.py:153} INFO - Started process (PID=17537) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:15:37,239] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:15:37,242] {logging_mixin.py:115} INFO - [2023-11-15 18:15:37,241] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:15:37,325] {logging_mixin.py:115} INFO - [2023-11-15 18:15:37,310] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:15:37,331] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:15:37,406] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.175 seconds
+[2023-11-15 18:16:07,861] {processor.py:153} INFO - Started process (PID=17595) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:16:07,863] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:16:07,865] {logging_mixin.py:115} INFO - [2023-11-15 18:16:07,865] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:16:07,953] {logging_mixin.py:115} INFO - [2023-11-15 18:16:07,939] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:16:07,959] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:16:08,010] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.156 seconds
+[2023-11-15 18:16:38,244] {processor.py:153} INFO - Started process (PID=17663) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:16:38,245] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:16:38,247] {logging_mixin.py:115} INFO - [2023-11-15 18:16:38,247] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:16:38,303] {logging_mixin.py:115} INFO - [2023-11-15 18:16:38,294] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:16:38,307] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:16:38,336] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.098 seconds
+[2023-11-15 18:17:08,758] {processor.py:153} INFO - Started process (PID=17721) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:17:08,760] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:17:08,762] {logging_mixin.py:115} INFO - [2023-11-15 18:17:08,762] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:17:08,841] {logging_mixin.py:115} INFO - [2023-11-15 18:17:08,829] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:17:08,847] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:17:08,910] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.160 seconds
+[2023-11-15 18:17:39,234] {processor.py:153} INFO - Started process (PID=17779) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:17:39,236] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:17:39,239] {logging_mixin.py:115} INFO - [2023-11-15 18:17:39,238] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:17:39,315] {logging_mixin.py:115} INFO - [2023-11-15 18:17:39,303] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:17:39,320] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:17:39,386] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.161 seconds
+[2023-11-15 18:18:09,865] {processor.py:153} INFO - Started process (PID=17845) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:18:09,867] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:18:09,869] {logging_mixin.py:115} INFO - [2023-11-15 18:18:09,869] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:18:09,926] {logging_mixin.py:115} INFO - [2023-11-15 18:18:09,915] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:18:09,930] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:18:09,993] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.133 seconds
+[2023-11-15 18:18:40,248] {processor.py:153} INFO - Started process (PID=17904) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:18:40,249] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:18:40,251] {logging_mixin.py:115} INFO - [2023-11-15 18:18:40,251] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:18:40,317] {logging_mixin.py:115} INFO - [2023-11-15 18:18:40,305] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:18:40,322] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:18:40,353] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.114 seconds
+[2023-11-15 18:19:10,439] {processor.py:153} INFO - Started process (PID=17962) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:10,441] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:19:10,444] {logging_mixin.py:115} INFO - [2023-11-15 18:19:10,444] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:10,545] {logging_mixin.py:115} INFO - [2023-11-15 18:19:10,537] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 6, in <module>
+    from airflow.providers.postgres.operators.postgres import SQLExecuteQueryOperator
+ImportError: cannot import name 'SQLExecuteQueryOperator' from 'airflow.providers.postgres.operators.postgres' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py)
+[2023-11-15 18:19:10,550] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:10,584] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.150 seconds
+[2023-11-15 18:19:17,731] {processor.py:153} INFO - Started process (PID=17986) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:17,734] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:19:17,737] {logging_mixin.py:115} INFO - [2023-11-15 18:19:17,737] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:17,847] {logging_mixin.py:115} INFO - [2023-11-15 18:19:17,835] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:19:17,851] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:17,898] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.177 seconds
+[2023-11-15 18:19:48,165] {processor.py:153} INFO - Started process (PID=18044) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:48,167] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:19:48,169] {logging_mixin.py:115} INFO - [2023-11-15 18:19:48,168] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:48,229] {logging_mixin.py:115} INFO - [2023-11-15 18:19:48,216] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:19:48,233] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:19:48,289] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.128 seconds
+[2023-11-15 18:20:18,783] {processor.py:153} INFO - Started process (PID=18111) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:20:18,785] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:20:18,787] {logging_mixin.py:115} INFO - [2023-11-15 18:20:18,787] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:20:18,856] {logging_mixin.py:115} INFO - [2023-11-15 18:20:18,846] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:20:18,863] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:20:18,914] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.136 seconds
+[2023-11-15 18:20:49,819] {processor.py:153} INFO - Started process (PID=18169) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:20:49,821] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:20:49,823] {logging_mixin.py:115} INFO - [2023-11-15 18:20:49,823] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:20:49,899] {logging_mixin.py:115} INFO - [2023-11-15 18:20:49,885] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:20:49,905] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:20:49,975] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.168 seconds
+[2023-11-15 18:21:20,476] {processor.py:153} INFO - Started process (PID=18227) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:21:20,478] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:21:20,480] {logging_mixin.py:115} INFO - [2023-11-15 18:21:20,480] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:21:20,531] {logging_mixin.py:115} INFO - [2023-11-15 18:21:20,521] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:21:20,537] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:21:20,571] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.102 seconds
+[2023-11-15 18:21:50,941] {processor.py:153} INFO - Started process (PID=18295) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:21:50,942] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:21:50,944] {logging_mixin.py:115} INFO - [2023-11-15 18:21:50,944] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:21:51,000] {logging_mixin.py:115} INFO - [2023-11-15 18:21:50,991] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:21:51,003] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:21:51,054] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.118 seconds
+[2023-11-15 18:22:21,593] {processor.py:153} INFO - Started process (PID=18353) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:22:21,595] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:22:21,598] {logging_mixin.py:115} INFO - [2023-11-15 18:22:21,598] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:22:21,667] {logging_mixin.py:115} INFO - [2023-11-15 18:22:21,657] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:22:21,672] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:22:21,735] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.148 seconds
+[2023-11-15 18:22:52,550] {processor.py:153} INFO - Started process (PID=18418) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:22:52,551] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:22:52,554] {logging_mixin.py:115} INFO - [2023-11-15 18:22:52,553] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:22:52,613] {logging_mixin.py:115} INFO - [2023-11-15 18:22:52,603] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:22:52,617] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:22:52,669] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.123 seconds
+[2023-11-15 18:23:22,890] {processor.py:153} INFO - Started process (PID=18478) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:23:22,892] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:23:22,893] {logging_mixin.py:115} INFO - [2023-11-15 18:23:22,893] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:23:22,950] {logging_mixin.py:115} INFO - [2023-11-15 18:23:22,941] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:23:22,953] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:23:22,986] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.103 seconds
+[2023-11-15 18:23:53,088] {processor.py:153} INFO - Started process (PID=18537) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:23:53,090] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:23:53,092] {logging_mixin.py:115} INFO - [2023-11-15 18:23:53,091] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:23:53,146] {logging_mixin.py:115} INFO - [2023-11-15 18:23:53,137] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:23:53,151] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:23:53,193] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.109 seconds
+[2023-11-15 18:24:23,629] {processor.py:153} INFO - Started process (PID=18602) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:24:23,631] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:24:23,634] {logging_mixin.py:115} INFO - [2023-11-15 18:24:23,633] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:24:23,697] {logging_mixin.py:115} INFO - [2023-11-15 18:24:23,685] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:24:23,701] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:24:23,756] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.135 seconds
+[2023-11-15 18:24:54,293] {processor.py:153} INFO - Started process (PID=18660) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:24:54,296] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:24:54,298] {logging_mixin.py:115} INFO - [2023-11-15 18:24:54,298] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:24:54,374] {logging_mixin.py:115} INFO - [2023-11-15 18:24:54,360] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:24:54,379] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:24:54,417] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.138 seconds
+[2023-11-15 18:25:24,978] {processor.py:153} INFO - Started process (PID=18718) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:25:24,979] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:25:24,981] {logging_mixin.py:115} INFO - [2023-11-15 18:25:24,981] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:25:25,068] {logging_mixin.py:115} INFO - [2023-11-15 18:25:25,055] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:25:25,073] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:25:25,130] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.162 seconds
+[2023-11-15 18:25:55,802] {processor.py:153} INFO - Started process (PID=18785) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:25:55,804] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:25:55,806] {logging_mixin.py:115} INFO - [2023-11-15 18:25:55,806] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:25:55,874] {logging_mixin.py:115} INFO - [2023-11-15 18:25:55,865] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:25:55,878] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:25:55,921] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.126 seconds
+[2023-11-15 18:26:25,976] {processor.py:153} INFO - Started process (PID=18843) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:26:25,977] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:26:25,978] {logging_mixin.py:115} INFO - [2023-11-15 18:26:25,978] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:26:26,030] {logging_mixin.py:115} INFO - [2023-11-15 18:26:26,020] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:26:26,033] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:26:26,071] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.099 seconds
+[2023-11-15 18:26:56,417] {processor.py:153} INFO - Started process (PID=18899) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:26:56,419] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:26:56,421] {logging_mixin.py:115} INFO - [2023-11-15 18:26:56,420] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:26:56,476] {logging_mixin.py:115} INFO - [2023-11-15 18:26:56,468] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:26:56,480] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:26:56,519] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.108 seconds
+[2023-11-15 18:27:14,579] {processor.py:153} INFO - Started process (PID=18945) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:27:14,581] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:27:14,583] {logging_mixin.py:115} INFO - [2023-11-15 18:27:14,582] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:27:14,745] {logging_mixin.py:115} INFO - [2023-11-15 18:27:14,712] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from main import get_vacancy
+  File "/opt/airflow/dags/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:27:14,750] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:27:14,790] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.216 seconds
+[2023-11-15 18:27:45,212] {processor.py:153} INFO - Started process (PID=19003) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:27:45,213] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:27:45,215] {logging_mixin.py:115} INFO - [2023-11-15 18:27:45,215] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:27:45,272] {logging_mixin.py:115} INFO - [2023-11-15 18:27:45,262] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from main import get_vacancy
+ModuleNotFoundError: No module named 'main'
+[2023-11-15 18:27:45,277] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:27:45,323] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.116 seconds
+[2023-11-15 18:28:00,814] {processor.py:153} INFO - Started process (PID=19040) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:28:00,816] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:28:00,817] {logging_mixin.py:115} INFO - [2023-11-15 18:28:00,817] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:28:00,902] {logging_mixin.py:115} INFO - [2023-11-15 18:28:00,895] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+ModuleNotFoundError: No module named 'parsing_hh'
+[2023-11-15 18:28:00,906] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:28:00,940] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.132 seconds
+[2023-11-15 18:28:31,156] {processor.py:153} INFO - Started process (PID=19092) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:28:31,157] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:28:31,158] {logging_mixin.py:115} INFO - [2023-11-15 18:28:31,158] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:28:31,381] {logging_mixin.py:115} INFO - [2023-11-15 18:28:31,351] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:28:31,385] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:28:31,428] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.276 seconds
+[2023-11-15 18:29:01,973] {processor.py:153} INFO - Started process (PID=19159) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:29:01,976] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:29:01,978] {logging_mixin.py:115} INFO - [2023-11-15 18:29:01,978] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:29:02,127] {logging_mixin.py:115} INFO - [2023-11-15 18:29:02,094] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:29:02,132] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:29:02,173] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.206 seconds
+[2023-11-15 18:29:32,317] {processor.py:153} INFO - Started process (PID=19215) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:29:32,318] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:29:32,320] {logging_mixin.py:115} INFO - [2023-11-15 18:29:32,320] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:29:32,462] {logging_mixin.py:115} INFO - [2023-11-15 18:29:32,428] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:29:32,468] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:29:32,511] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.198 seconds
+[2023-11-15 18:30:02,915] {processor.py:153} INFO - Started process (PID=19281) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:30:02,916] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:30:02,918] {logging_mixin.py:115} INFO - [2023-11-15 18:30:02,918] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:30:03,054] {logging_mixin.py:115} INFO - [2023-11-15 18:30:03,024] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:30:03,059] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:30:03,100] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.190 seconds
+[2023-11-15 18:30:33,294] {processor.py:153} INFO - Started process (PID=19337) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:30:33,297] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:30:33,299] {logging_mixin.py:115} INFO - [2023-11-15 18:30:33,299] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:30:33,463] {logging_mixin.py:115} INFO - [2023-11-15 18:30:33,429] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:30:33,469] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:30:33,515] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.231 seconds
+[2023-11-15 18:31:03,839] {processor.py:153} INFO - Started process (PID=19395) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:31:03,841] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:31:03,843] {logging_mixin.py:115} INFO - [2023-11-15 18:31:03,843] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:31:04,028] {logging_mixin.py:115} INFO - [2023-11-15 18:31:03,994] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:31:04,032] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:31:04,079] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.248 seconds
+[2023-11-15 18:31:34,605] {processor.py:153} INFO - Started process (PID=19462) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:31:34,607] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:31:34,608] {logging_mixin.py:115} INFO - [2023-11-15 18:31:34,608] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:31:34,752] {logging_mixin.py:115} INFO - [2023-11-15 18:31:34,720] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:31:34,758] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:31:34,811] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.213 seconds
+[2023-11-15 18:32:05,052] {processor.py:153} INFO - Started process (PID=19520) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:32:05,054] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:32:05,057] {logging_mixin.py:115} INFO - [2023-11-15 18:32:05,057] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:32:05,211] {logging_mixin.py:115} INFO - [2023-11-15 18:32:05,181] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:32:05,216] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:32:05,259] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.214 seconds
+[2023-11-15 18:32:35,847] {processor.py:153} INFO - Started process (PID=19578) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:32:35,849] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:32:35,852] {logging_mixin.py:115} INFO - [2023-11-15 18:32:35,852] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:32:36,021] {logging_mixin.py:115} INFO - [2023-11-15 18:32:35,985] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:32:36,027] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:32:36,063] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.226 seconds
+[2023-11-15 18:33:06,312] {processor.py:153} INFO - Started process (PID=19645) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:06,313] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:33:06,315] {logging_mixin.py:115} INFO - [2023-11-15 18:33:06,315] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:06,511] {logging_mixin.py:115} INFO - [2023-11-15 18:33:06,475] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:33:06,517] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:06,572] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.268 seconds
+[2023-11-15 18:33:36,929] {processor.py:153} INFO - Started process (PID=19703) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:36,931] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:33:36,933] {logging_mixin.py:115} INFO - [2023-11-15 18:33:36,933] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:37,081] {logging_mixin.py:115} INFO - [2023-11-15 18:33:37,046] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:33:37,085] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:37,130] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.208 seconds
+[2023-11-15 18:33:40,183] {processor.py:153} INFO - Started process (PID=19717) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:40,184] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:33:40,185] {logging_mixin.py:115} INFO - [2023-11-15 18:33:40,185] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:40,329] {logging_mixin.py:115} INFO - [2023-11-15 18:33:40,302] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:33:40,333] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:33:40,369] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.191 seconds
+[2023-11-15 18:34:06,575] {processor.py:153} INFO - Started process (PID=19762) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:34:06,577] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:34:06,579] {logging_mixin.py:115} INFO - [2023-11-15 18:34:06,579] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:34:06,839] {logging_mixin.py:115} INFO - [2023-11-15 18:34:06,808] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:34:06,844] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:34:06,878] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.307 seconds
+[2023-11-15 18:34:37,381] {processor.py:153} INFO - Started process (PID=19832) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:34:37,382] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:34:37,384] {logging_mixin.py:115} INFO - [2023-11-15 18:34:37,384] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:34:37,542] {logging_mixin.py:115} INFO - [2023-11-15 18:34:37,506] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:34:37,548] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:34:37,588] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.213 seconds
+[2023-11-15 18:35:08,036] {processor.py:153} INFO - Started process (PID=19890) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:35:08,038] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:35:08,039] {logging_mixin.py:115} INFO - [2023-11-15 18:35:08,039] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:35:08,151] {logging_mixin.py:115} INFO - [2023-11-15 18:35:08,127] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:35:08,156] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:35:08,189] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.156 seconds
+[2023-11-15 18:35:39,073] {processor.py:153} INFO - Started process (PID=19948) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:35:39,076] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:35:39,079] {logging_mixin.py:115} INFO - [2023-11-15 18:35:39,079] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:35:39,238] {logging_mixin.py:115} INFO - [2023-11-15 18:35:39,204] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:35:39,244] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:35:39,282] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.218 seconds
+[2023-11-15 18:36:09,858] {processor.py:153} INFO - Started process (PID=20015) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:36:09,859] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:36:09,862] {logging_mixin.py:115} INFO - [2023-11-15 18:36:09,862] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:36:10,049] {logging_mixin.py:115} INFO - [2023-11-15 18:36:10,005] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:36:10,057] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:36:10,102] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.251 seconds
+[2023-11-15 18:36:40,347] {processor.py:153} INFO - Started process (PID=20073) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:36:40,349] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:36:40,351] {logging_mixin.py:115} INFO - [2023-11-15 18:36:40,351] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:36:40,526] {logging_mixin.py:115} INFO - [2023-11-15 18:36:40,477] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:36:40,533] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:36:40,581] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.241 seconds
+[2023-11-15 18:37:10,799] {processor.py:153} INFO - Started process (PID=20141) to work on /opt/airflow/dags/pipeline.py
+[2023-11-15 18:37:10,800] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2023-11-15 18:37:10,802] {logging_mixin.py:115} INFO - [2023-11-15 18:37:10,802] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:37:10,947] {logging_mixin.py:115} INFO - [2023-11-15 18:37:10,909] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline.py", line 12, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/__init__.py", line 1, in <module>
+    from parsing_hh.main import get_vacancy
+  File "/opt/airflow/dags/parsing_hh/main.py", line 12, in <module>
+    host='127.0.0.1', port='5430')
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5430 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2023-11-15 18:37:10,953] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline.py
+[2023-11-15 18:37:11,037] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.243 seconds
