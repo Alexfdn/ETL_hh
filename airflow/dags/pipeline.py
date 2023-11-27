@@ -94,12 +94,12 @@ def get_vacancy():
             int(raw['id']), 
             raw['name'],
             raw['published_at'],
-            bool(True if raw['archived'] == 'true' else False),                                                           #is_archive
+            bool(True if raw['archived'] == 'true' else False),                                                           
             bool(True if raw['type']['id'] == 'open' else False),
-            (raw['employer']['id'] if 'id' in raw['employer'] else None),                                             #employer_id
+            (raw['employer']['id'] if 'id' in raw['employer'] else None),                                             
             (raw['employer']['name'] if 'name' in raw['employer'] else None),
             bool(raw['employer']['accredited_it_employer'] if 'accredited_it_employer' in raw['employer'] else None),
-            (raw['experience']['id'] if 'id' in raw['experience'] else None),                                         #experience_id
+            (raw['experience']['id'] if 'id' in raw['experience'] else None),
             (raw['experience']['name'] if 'name' in raw['experience'] else None),
             raw['area']['id'] if 'id' in raw['experience'] else None,
             raw['area']['name'] if 'name' in raw['experience'] else None,
